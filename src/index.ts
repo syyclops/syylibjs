@@ -9,6 +9,7 @@ export { default as UxDot } from "./components/Dot";
 export { default as UxProgress } from "./components/Progress";
 export { default as UxSelect } from "./components/Select";
 export { default as UxDropdown } from "./components/Dropdown";
+export { default as UxToggle } from "./components/Toggle";
 
 // Props
 export { SelectOptionProps } from "./types/select";
