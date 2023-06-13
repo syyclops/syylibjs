@@ -49,7 +49,6 @@ const Select = ({
       </div>
       <div
         className={classnames(
-          "w-[10%]",
           "text-xs",
           "transition duration-75",
           open ? "rotate-90" : ""
