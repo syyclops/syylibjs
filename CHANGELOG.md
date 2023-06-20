@@ -1,9 +1,14 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
 
-## [1.3.0](https://github.com/syyclops/syylibjs/compare/v1.2.1...v1.3.0) (2023-06-20)
+## [1.4.0] (2023-06-20)
 
+### Features
+
+* **tweak-feature:** polish dropdown component ([9794c08](https://github.com/syyclops/syylibjs/commit/9794c0890e36aa937a462659f390d779abf57431))
+
+## [1.3.0] (2023-06-20)
 
 ### Features
 

@@ -11,7 +11,8 @@ type ActionProps = {
     | "error"
     | "success"
     | "warning"
-    | "info";
+    | "info"
+    | "dark";
   size?: "xs" | "sm" | "md" | "lg";
   leftIcon?: IconType;
   rightIcon?: IconType;
