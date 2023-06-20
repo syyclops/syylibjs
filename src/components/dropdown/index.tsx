@@ -21,7 +21,8 @@ const Dropdown = ({
   width = "w-[8rem]",
   position = "left",
   rounded = false,
-  cx = "",
+  cxLayout = "",
+  cxAction = "",
 }: Omit<
   ActionProps,
   | "clickable"
@@ -31,6 +32,7 @@ const Dropdown = ({
   | "onAction"
   | "variant"
   | "children"
+  | "cx"
 > &
   DropdownProps) => {
   return (
@@ -41,7 +43,7 @@ const Dropdown = ({
           variants[variant],
           rounded ? "rounded-full" : "rounded-md"
         ),
-        cx
+        cxLayout
       )}
     >
       <Action
@@ -51,7 +53,10 @@ const Dropdown = ({
         leftIcon={leftIcon}
         rightIcon={rightIcon}
         rounded={rounded}
-        cx={classnames("relative hover:opacity-100 bg-inherit w-full h-full")}
+        cx={twMerge(
+          classnames("relative hover:opacity-100 bg-inherit w-full h-full"),
+          cxAction
+        )}
       >
         {title}
       </Action>
