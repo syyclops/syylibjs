@@ -1,15 +1,11 @@
 type DropdownProps = {
-  options: DropdownOptionProps[];
-  callback: (e: DropdownOptionProps) => void;
-  variant?: "primary" | "secondary";
+  onAction: () => void;
+  variant?: "primary" | "secondary" | "dark";
   width?: string;
   position?: "left" | "right";
+  open: boolean;
+  children: JSX.Element | JSX.Element[];
+  title: JSX.Element | string;
 };
 
-type DropdownOptionProps = {
-  label: string | JSX.Element;
-  value: string;
-  title?: string;
-};
-
-export { DropdownProps, type DropdownOptionProps };
+export { DropdownProps };
