@@ -1,3 +1,5 @@
+// Author - Varun Bardwaj
+
 import React from "react";
 import classnames from "classnames";
 import { alignment, elements } from "../config/title";

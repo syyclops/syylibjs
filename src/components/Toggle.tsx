@@ -1,5 +1,6 @@
+// Author - Varun Bardwaj
+
 import React, { useState } from "react";
-import { twMerge } from "tailwind-merge";
 import classNames from "classnames";
 import { ToggleProps } from "../types/toggle";
 import { variants } from "../config";

@@ -2,7 +2,10 @@ import { SizeProps, VariantsProps } from "../types";
 
 const variants: VariantsProps = {
   primary: "bg-primary text-white",
-  dark: "bg-dark-neutral-200 text-white",
+  "primary-light": "bg-primary-light text-dark-neutral-300",
+  dark: "bg-dark-neutral-100 text-white",
+  darker: "bg-dark-neutral-200 text-white",
+  darkest: "bg-dark-neutral-300 text-white",
   secondary: "bg-secondary text-white",
   transparent: "bg-transparent text-white",
   error: "bg-error text-white",
