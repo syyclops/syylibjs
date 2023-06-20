@@ -1,3 +1,5 @@
+// Author - Varun Bardwaj
+
 import { twMerge } from "tailwind-merge";
 import React from "react";
 import { BubbleProps } from "../types/bubble";

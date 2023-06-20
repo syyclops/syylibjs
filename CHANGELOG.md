@@ -1,6 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [1.3.0](https://github.com/syyclops/syylibjs/compare/v1.2.1...v1.3.0) (2023-06-20)
+
+
+### Features
+
+* **new-feature:** add checkbox, input, pagination, table component ([a560584](https://github.com/syyclops/syylibjs/commit/a560584b41457c461da3e4367239aa80c72795b1))
 
 ### [1.2.1] (2023-06-13)
 

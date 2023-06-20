@@ -1,16 +1,19 @@
 type SelectProps = {
-  selected: number;
-  options: SelectOptionProps[];
+  title: string;
+  children: JSX.Element | JSX.Element[];
   variant?: "primary" | "secondary" | "dark";
   width?: string;
-  callback: (e: SelectOptionProps) => void;
+  onAction: () => void;
+  open: boolean;
+  cxLayout?: string;
+  cxSelect?: string;
 };
 
 type SelectOptionProps = {
-  id: number;
-  label: string | JSX.Element;
-  value: string;
-  title?: string;
+  name: string;
+  children: JSX.Element | string;
+  onSelect?: (n: string) => void;
+  cx?: string;
 };
 
 export { SelectProps, SelectOptionProps };
