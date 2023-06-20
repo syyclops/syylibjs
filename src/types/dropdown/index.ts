@@ -6,6 +6,8 @@ type DropdownProps = {
   open: boolean;
   children: JSX.Element | JSX.Element[];
   title: JSX.Element | string;
+  cxLayout?: string;
+  cxAction?: string;
 };
 
 export { DropdownProps };
