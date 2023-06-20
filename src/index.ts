@@ -9,7 +9,8 @@ export { default as UxDot } from "./components/Dot";
 export { default as UxProgress } from "./components/Progress";
 export { default as UxSelect } from "./components/select/index";
 export { default as UxSelectOption } from "./components/select/SelectOption";
-export { default as UxDropdown } from "./components/Dropdown";
+export { default as UxDropdown } from "./components/dropdown";
+export { default as UxDropdownOption } from "./components/dropdown/DropdownOption";
 export { default as UxToggle } from "./components/Toggle";
 export { default as UxTable } from "./components/table/Table";
 export { default as UxTableHeader } from "./components/table/TableHeader";
@@ -21,6 +22,3 @@ export { default as UxTableDef } from "./components/table/TableDef";
 export { default as UxCheckbox } from "./components/Checkbox";
 export { default as UxInput } from "./components/Input";
 export { default as UxPagination } from "./components/Pagination";
-
-// Props
-export { DropdownOptionProps } from "./types/dropdown";
