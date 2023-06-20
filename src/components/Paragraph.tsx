@@ -1,3 +1,5 @@
+// Author - Varun Bardwaj
+
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import classNames from "classnames";

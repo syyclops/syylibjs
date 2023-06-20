@@ -1,3 +1,5 @@
+// Author - Varun Bardwaj
+
 import React from "react";
 import { memo, useEffect } from "react";
 import { IconType } from "react-icons";

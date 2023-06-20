@@ -1,8 +1,10 @@
+// Author - Varun Bardwaj
+
 import React, { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import classnames from "classnames";
 import { ActionProps } from "../types/action";
-import { UxAction } from "..";
+import Action from "../components/Action";
 import { DropdownProps } from "../types/dropdown";
 import { variants } from "../config";
 
@@ -31,7 +33,7 @@ const Dropdown = ({
   DropdownProps) => {
   const [open, setOpen] = useState(false);
   return (
-    <UxAction
+    <Action
       type={type}
       onAction={() => setOpen(!open)}
       variant={variant}
@@ -96,7 +98,7 @@ const Dropdown = ({
           </div>
         )}
       </>
-    </UxAction>
+    </Action>
   );
 };
 

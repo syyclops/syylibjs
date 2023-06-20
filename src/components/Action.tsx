@@ -1,3 +1,5 @@
+// Author - Varun Bardwaj
+
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import classNames from "classnames";
@@ -40,7 +42,9 @@ const Action = ({
             ? variants["transparent"]
             : "",
           sizes[size],
-          clickable ? "hover:opacity-90 cursor-pointer" : "opacity-50",
+          clickable
+            ? "hover:opacity-90 cursor-pointer"
+            : "opacity-50 cursor-not-allowed",
           rounded ? "rounded-full" : "rounded-lg",
           "relative w-fit flex justify-center items-center font-semibold border-none"
         ),
