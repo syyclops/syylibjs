@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/syyclops/syylibjs/compare/v1.4.1...v1.5.0) (2023-06-22)
+
+
+### Features
+
+* **new-feature:** add pmcalendar component ([7e480d1](https://github.com/syyclops/syylibjs/commit/7e480d19916837940cb7288369e5bf36712c454c))
+
 ### [1.4.1] (2023-06-20)
 
 
