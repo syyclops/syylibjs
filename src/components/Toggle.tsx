@@ -10,9 +10,8 @@ const Toggle = ({
   variant = "primary",
   size = "sm",
   onAction,
+  on = false,
 }: ToggleProps) => {
-  const [slide, setSlide] = useState(false);
-
   return (
     <div
       className={classNames(
@@ -24,8 +23,7 @@ const Toggle = ({
         sizes[size].toggle
       )}
       onClick={() => {
-        setSlide(!slide);
-        onAction(!slide);
+        onAction(!on);
       }}
     >
       <div
@@ -36,7 +34,7 @@ const Toggle = ({
           "m-[0.1rem]",
           "transition",
           "duration-150",
-          !slide ? "translate-x-[1%]" : "translate-x-[90%]",
+          !on ? "translate-x-[1%]" : "translate-x-[90%]",
           sizes[size].switch
         )}
       />

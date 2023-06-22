@@ -2,6 +2,7 @@ type ToggleProps = {
   variant?: "primary" | "secondary" | "dark";
   size?: "xs" | "sm" | "md" | "lg";
   onAction: (state: boolean) => void;
+  on: boolean;
 };
 
 type SizeProps = {

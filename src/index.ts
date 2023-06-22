@@ -22,3 +22,7 @@ export { default as UxTableDef } from "./components/table/TableDef";
 export { default as UxCheckbox } from "./components/Checkbox";
 export { default as UxInput } from "./components/Input";
 export { default as UxPagination } from "./components/Pagination";
+export { default as UxPMCalendar } from "./components/PMCalendar";
+
+//Props
+export { PMActionProps, ContentProps } from "./types/pmcalendar";
