@@ -1,8 +1,8 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
 
-## [1.5.0](https://github.com/syyclops/syylibjs/compare/v1.4.1...v1.5.0) (2023-06-22)
+## [1.5.0] (2023-06-22)
 
 
 ### Features
