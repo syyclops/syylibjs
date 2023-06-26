@@ -1,14 +1,20 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
 
-### [1.4.1](https://github.com/syyclops/syylibjs/compare/v1.4.0...v1.4.1) (2023-06-20)
+## [1.5.0] (2023-06-22)
+
+
+### Features
+
+* **new-feature:** add pmcalendar component ([7e480d1](https://github.com/syyclops/syylibjs/commit/7e480d19916837940cb7288369e5bf36712c454c))
+
+### [1.4.1] (2023-06-20)
 
 
 ### Features
 
 * **props:** polish dropdown props ([58b9fc4](https://github.com/syyclops/syylibjs/commit/58b9fc4e158f3b58df87aef1a7037b6597b4aafc))
-* **tweak-feature:** polsih dropdown component ([0627830](https://github.com/syyclops/syylibjs/commit/062783065d096da33d745f422e786df8a0e85e9d))
 
 ## [1.4.0] (2023-06-20)
 
@@ -22,14 +28,14 @@ All notable changes to this project will be documented in this file. See [standa
 
 * **new-feature:** add checkbox, input, pagination, table component ([a560584](https://github.com/syyclops/syylibjs/commit/a560584b41457c461da3e4367239aa80c72795b1))
 
-### [1.2.1] (2023-06-13)
+## [1.2.1] (2023-06-13)
 
 
 ### Bug Fixes
 
 * **#4:** select drop icon alignment ([dd14469](https://github.com/syyclops/syylibjs/commit/dd144695e04d7690f813686bc03d051a0c1eb06c)), closes [#4](https://github.com/syyclops/syylibjs/issues/4)
 
-### [1.1.0] (2023-06-13)
+## [1.1.0] (2023-06-13)
 
 
 ### Features
