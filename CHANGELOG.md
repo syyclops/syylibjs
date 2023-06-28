@@ -1,6 +1,14 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [1.6.0](https://github.com/syyclops/syylibjs/compare/v1.5.0...v1.6.0) (2023-06-28)
+
+
+### Features
+
+* **new-feature:** add card component ([fc63274](https://github.com/syyclops/syylibjs/commit/fc632744d2d140f4da30100f681d2461c636fb65))
+* **new-feature:** add pmcalendar component ([8b08229](https://github.com/syyclops/syylibjs/commit/8b082294117385156b1a9e831df3515bff7fed94))
 
 ## [1.5.0] (2023-06-22)
 
