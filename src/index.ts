@@ -23,6 +23,7 @@ export { default as UxCheckbox } from "./components/Checkbox";
 export { default as UxInput } from "./components/Input";
 export { default as UxPagination } from "./components/Pagination";
 export { default as UxPMCalendar } from "./components/PMCalendar";
+export { default as UxCard } from "./components/Card";
 
 //Props
 export { PMActionProps, ContentProps } from "./types/pmcalendar";
