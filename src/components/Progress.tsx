@@ -55,7 +55,7 @@ const renderCircle = ({
   showPercent = true,
 }: ProgressProps) => {
   const size = circleSize;
-  const stroke = (size * 20) / 100;
+  const stroke = (size * 12) / 100;
   const x = size / 2;
   const rad = size / 2 - stroke / 2;
   const circumference = rad * 2 * Math.PI;
@@ -70,14 +70,14 @@ const renderCircle = ({
       }}
     >
       <svg
-        className="rotate-[85deg] -scale-x-[1]"
+        className="rotate-[-90deg]"
         style={{
           width: `${size}rem`,
           height: `${size}rem`,
         }}
       >
         <circle
-          className={twMerge(classnames("stroke-white"), remainingStroke)}
+          className={twMerge(classnames("stroke-[#374171]"), remainingStroke)}
           style={{
             fill: "transparent",
             transition: "stroke-dashoffset 1s",
