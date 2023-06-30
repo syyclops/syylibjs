@@ -1,6 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.7.1](https://github.com/syyclops/syylibjs/compare/v1.7.0...v1.7.1) (2023-06-30)
+
+
+### Features
+
+* **new-feature:** add pieChart component ([c78c760](https://github.com/syyclops/syylibjs/commit/c78c760a5960ae411c571e426d80da7cd167e823))
 
 ## [1.7.0] (2023-06-30)
 
