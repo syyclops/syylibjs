@@ -1,6 +1,12 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file
+
+## [1.7.0] (2023-06-30)
+
+### Features
+
+- **new-feature:** add pieChart component ([da27e27](https://github.com/syyclops/syylibjs/commit/da27e27141584920938e20ca11b74a5c2d5c27d6))
 
 ## [1.6.0] (2023-06-28)
 
