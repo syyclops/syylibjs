@@ -1,6 +1,14 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [1.7.0](https://github.com/syyclops/syylibjs/compare/v1.6.0...v1.7.0) (2023-06-30)
+
+
+### Features
+
+* **new-feature:** add card component ([ce30416](https://github.com/syyclops/syylibjs/commit/ce30416290e17668f708ad75c83f0b8a73c8a986))
+* **new-feature:** add pieChart component ([da27e27](https://github.com/syyclops/syylibjs/commit/da27e27141584920938e20ca11b74a5c2d5c27d6))
 
 ## [1.6.0] (2023-06-28)
 
