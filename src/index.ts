@@ -24,6 +24,7 @@ export { default as UxInput } from "./components/Input";
 export { default as UxPagination } from "./components/Pagination";
 export { default as UxPMCalendar } from "./components/PMCalendar";
 export { default as UxCard } from "./components/Card";
+export { default as UxPieChart } from "./components/PieChart";
 
 //Props
 export { PMActionProps, ContentProps } from "./types/pmcalendar";

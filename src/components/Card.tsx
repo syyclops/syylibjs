@@ -23,7 +23,7 @@ const Card = ({
         cx
       )}
       style={{
-        border: "1px solid",
+        border: "1px solid #374171",
       }}
     >
       {children}
