@@ -1,6 +1,20 @@
 # Changelog
 
-All notable changes to this project will be documented in this file
+All notable changes to this project will be documented in this file.
+
+## [1.8.0] (2023-07-03)
+
+
+### Features
+
+* **new-feature:** add tooltip component ([c1db89f](https://github.com/syyclops/syylibjs/commit/c1db89f36aac85d5f105e46753a9419516c48e74))
+
+### [1.7.1] (2023-06-30)
+
+
+### Features
+
+* **polish:** global variants
 
 ## [1.7.0] (2023-06-30)
 

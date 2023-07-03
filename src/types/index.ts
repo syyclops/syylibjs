@@ -4,6 +4,9 @@ type VariantsProps = {
   dark?: string;
   darker?: string;
   darkest?: string;
+  light?: string;
+  lighter?: string;
+  lightest?: string;
   secondary?: string;
   transparent?: string;
   error?: string;
