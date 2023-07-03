@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.9.0] (2023-07-03)
+
+
+### Features
+
+* **new-feature:** add accordion  component ([ffb2dbe](https://github.com/syyclops/syylibjs/commit/ffb2dbee5da677bcf629b852d0c88dcd02b63291))
+
 ## [1.8.0] (2023-07-03)
 
 
