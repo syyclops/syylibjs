@@ -23,7 +23,6 @@ const RenderProgress = ({
       style={{
         fill: "transparent",
         transition: "stroke-dashoffset 1s",
-        // filter: "drop-shadow(0px 0px 5px #00000060)",
       }}
       className={twMerge(classnames(pieStroke[circle.variant]))}
       cx={`${x}rem`}
@@ -56,8 +55,8 @@ const PieChart = ({ circleSize = 3, circles = [] }: PieChartProps) => {
           height: `${size}rem`,
         }}
       >
-        {circles.map((circle: CircleProps) => (
-          <RenderProgress circle={circle} size={size} stroke={stroke} />
+        {circles.map((circle: CircleProps, i: number) => (
+          <RenderProgress key={i} circle={circle} size={size} stroke={stroke} />
         ))}
       </svg>
     </div>
