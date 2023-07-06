@@ -2,8 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.9.0] (2023-07-03)
+## [1.10.0] (2023-07-06)
 
+### Features
+
+* **new-feature:** add rulCalendar component ([6279aaf](https://github.com/syyclops/syylibjs/commit/6279aaf2a546fdbd5a6290fe9aec5118cc6fb3d6))
+
+## [1.9.0] (2023-07-03)
 
 ### Features
 

@@ -27,6 +27,7 @@ export { default as UxCard } from "./components/Card";
 export { default as UxPieChart } from "./components/PieChart";
 export { default as UxToolTip } from "./components/ToolTip";
 export { default as UxAccordion } from "./components/Accordion";
+export { default as UxRUL } from "./components/RUL";
 
 //Props
 export { PMActionProps, ContentProps } from "./types/pmcalendar";
