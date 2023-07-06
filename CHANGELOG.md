@@ -1,17 +1,14 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
 
-## [1.10.0](https://github.com/syyclops/syylibjs/compare/v1.9.0...v1.10.0) (2023-07-06)
-
+## [1.10.0] (2023-07-06)
 
 ### Features
 
-* **new-feature:** add accordion  component ([16617c4](https://github.com/syyclops/syylibjs/commit/16617c402e092f0b40aafa6ecc038cc3105fceea))
 * **new-feature:** add rulCalendar component ([6279aaf](https://github.com/syyclops/syylibjs/commit/6279aaf2a546fdbd5a6290fe9aec5118cc6fb3d6))
 
 ## [1.9.0] (2023-07-03)
-
 
 ### Features
 
