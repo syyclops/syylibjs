@@ -3,7 +3,13 @@ import React from "react";
 import { TDefProps } from "../../types/table/tdef";
 import { twMerge } from "tailwind-merge";
 
-const TableDef = ({ children, divideX = true, cx = "" }: TDefProps) => {
+const TableDef = ({
+  children,
+  divideX = true,
+  onClick,
+  colSpan = 1,
+  cx = "",
+}: TDefProps) => {
   return (
     <td
       className={twMerge(
@@ -15,6 +21,8 @@ const TableDef = ({ children, divideX = true, cx = "" }: TDefProps) => {
         ),
         cx
       )}
+      colSpan={colSpan}
+      onClick={() => onClick && onClick()}
     >
       {children}
     </td>
