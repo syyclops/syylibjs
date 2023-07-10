@@ -1,14 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
 
-## [2.0.0](https://github.com/syyclops/syylibjs/compare/v1.10.0...v2.0.0) (2023-07-10)
+## [2.0.0] (2023-07-10)
 
 
 ### Features
 
 * **new-feature:** add collapse component ([8af8fb1](https://github.com/syyclops/syylibjs/commit/8af8fb1bb9ff56e11d7d3b69ee696db2d615ad17))
-* **new-feature:** add rulCalendar component ([7fcef49](https://github.com/syyclops/syylibjs/commit/7fcef4976b5423fc0a7dca0767e671dee4bf5dc9))
 
 ## [1.10.0] (2023-07-06)
 
