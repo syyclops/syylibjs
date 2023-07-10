@@ -3,7 +3,12 @@ import React from "react";
 import { THeadProps } from "../../types/table/thead";
 import { twMerge } from "tailwind-merge";
 
-const TableHead = ({ children, divideX = true, cx = "" }: THeadProps) => {
+const TableHead = ({
+  children,
+  divideX = true,
+  onClick,
+  cx = "",
+}: THeadProps) => {
   return (
     <th
       className={twMerge(
@@ -17,6 +22,7 @@ const TableHead = ({ children, divideX = true, cx = "" }: THeadProps) => {
         ),
         cx
       )}
+      onClick={() => onClick && onClick()}
       scope="col"
     >
       {children}
