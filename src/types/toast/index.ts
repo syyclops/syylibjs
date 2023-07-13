@@ -1,7 +1,17 @@
 import { IconType } from "react-icons";
 
 type ToastProps = {
-  variant?: "error" | "success" | "warning" | "info";
+  variant?:
+    | "error"
+    | "success"
+    | "warning"
+    | "info"
+    | "dark"
+    | "darker"
+    | "darkest"
+    | "light"
+    | "lighter"
+    | "lightest";
   message: string;
   timeout?: number;
   open: boolean;

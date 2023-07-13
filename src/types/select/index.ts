@@ -1,7 +1,15 @@
 type SelectProps = {
   title: string;
   children: JSX.Element | JSX.Element[];
-  variant?: "primary" | "secondary" | "dark";
+  variant?:
+    | "primary"
+    | "secondary"
+    | "dark"
+    | "darker"
+    | "darkest"
+    | "light"
+    | "lighter"
+    | "lightest";
   width?: string;
   onAction: () => void;
   open: boolean;

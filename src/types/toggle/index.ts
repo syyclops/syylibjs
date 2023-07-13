@@ -1,5 +1,14 @@
 type ToggleProps = {
-  variant?: "primary" | "secondary" | "dark";
+  variant?:
+    | "primary"
+    | "secondary"
+    | "dark"
+    | "dark"
+    | "darker"
+    | "darkest"
+    | "light"
+    | "lighter"
+    | "lightest";
   size?: "xs" | "sm" | "md" | "lg";
   onAction: (state: boolean) => void;
   on: boolean;
