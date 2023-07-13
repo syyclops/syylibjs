@@ -1,6 +1,14 @@
 type DropdownProps = {
   onAction: () => void;
-  variant?: "primary" | "secondary" | "dark";
+  variant?:
+    | "primary"
+    | "secondary"
+    | "dark"
+    | "darker"
+    | "darkest"
+    | "light"
+    | "lighter"
+    | "lightest";
   width?: string;
   position?: "left" | "right";
   open: boolean;

@@ -2,38 +2,41 @@
 
 All notable changes to this project will be documented in this file.
 
-## [2.0.0] (2023-07-10)
-
+## [3.0.0] (2023-07-13)
 
 ### Features
 
-* **new-feature:** add collapse component ([8af8fb1](https://github.com/syyclops/syylibjs/commit/8af8fb1bb9ff56e11d7d3b69ee696db2d615ad17))
+- **new-feature:** add popover component ([9e21b09]
+
+## [2.0.0] (2023-07-10)
+
+### Features
+
+- **new-feature:** add collapse component ([8af8fb1](https://github.com/syyclops/syylibjs/commit/8af8fb1bb9ff56e11d7d3b69ee696db2d615ad17))
 
 ## [1.10.0] (2023-07-06)
 
 ### Features
 
-* **new-feature:** add rulCalendar component ([6279aaf](https://github.com/syyclops/syylibjs/commit/6279aaf2a546fdbd5a6290fe9aec5118cc6fb3d6))
+- **new-feature:** add rulCalendar component ([6279aaf](https://github.com/syyclops/syylibjs/commit/6279aaf2a546fdbd5a6290fe9aec5118cc6fb3d6))
 
 ## [1.9.0] (2023-07-03)
 
 ### Features
 
-* **new-feature:** add accordion  component ([ffb2dbe](https://github.com/syyclops/syylibjs/commit/ffb2dbee5da677bcf629b852d0c88dcd02b63291))
+- **new-feature:** add accordion component ([ffb2dbe](https://github.com/syyclops/syylibjs/commit/ffb2dbee5da677bcf629b852d0c88dcd02b63291))
 
 ## [1.8.0] (2023-07-03)
 
-
 ### Features
 
-* **new-feature:** add tooltip component ([c1db89f](https://github.com/syyclops/syylibjs/commit/c1db89f36aac85d5f105e46753a9419516c48e74))
+- **new-feature:** add tooltip component ([c1db89f](https://github.com/syyclops/syylibjs/commit/c1db89f36aac85d5f105e46753a9419516c48e74))
 
 ### [1.7.1] (2023-06-30)
 
-
 ### Features
 
-* **polish:** global variants
+- **polish:** global variants
 
 ## [1.7.0] (2023-06-30)
 

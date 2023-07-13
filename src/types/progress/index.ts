@@ -15,7 +15,19 @@ type PercentRange<
 type ProgressProps = {
   type: "bar" | "circle";
   percent: PercentRange<0, 100>;
-  variant?: "primary" | "secondary" | "success" | "error" | "warning" | "info";
+  variant?:
+    | "primary"
+    | "secondary"
+    | "success"
+    | "error"
+    | "warning"
+    | "info"
+    | "dark"
+    | "darker"
+    | "darkest"
+    | "light"
+    | "lighter"
+    | "lightest";
   barSize?: "xs" | "sm" | "md" | "lg";
   circleSize?: number;
   showPercent?: boolean;

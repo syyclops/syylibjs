@@ -1,6 +1,18 @@
 type BadgeProps = {
   text: string;
-  variant?: "primary" | "secondary" | "error" | "success" | "warning" | "info";
+  variant?:
+    | "primary"
+    | "secondary"
+    | "error"
+    | "success"
+    | "warning"
+    | "info"
+    | "dark"
+    | "darker"
+    | "darkest"
+    | "light"
+    | "lighter"
+    | "lightest";
   bg?: string;
   fg?: string;
   size?: "xs" | "sm" | "md" | "lg";
