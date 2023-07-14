@@ -1,23 +1,12 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
 
-### [3.0.1](https://github.com/syyclops/syylibjs/compare/v3.0.0...v3.0.1) (2023-07-14)
-
-
-### Features
-
-* **new-feature:** add collapse component ([fa7834f](https://github.com/syyclops/syylibjs/commit/fa7834ffd037efaae8a8f6cba41840b591fe4cc2))
-* **new-feature:** add popover component ([4506d94](https://github.com/syyclops/syylibjs/commit/4506d94c27a5e0c45ddd3ba3106d3f2d503aa7d2))
-* **new-feature:** add popover component ([a816fa5](https://github.com/syyclops/syylibjs/commit/a816fa572e5c3a296c5e50e95a1ad1eac1c92c6b))
-* **polish:** rul component ([0c48d73](https://github.com/syyclops/syylibjs/commit/0c48d7340f275c9da7f06596e5eec388bdb379e2))
-
-## [2.0.0](https://github.com/syyclops/syylibjs/compare/v1.10.0...v2.0.0) (2023-07-10)
-
+### [3.0.1] (2023-07-14)
 
 ### Features
 
-* **new-feature:** add collapse component ([8af8fb1](https://github.com/syyclops/syylibjs/commit/8af8fb1bb9ff56e11d7d3b69ee696db2d615ad17))
+- **polish:** rul component ([0c48d73](https://github.com/syyclops/syylibjs/commit/0c48d7340f275c9da7f06596e5eec388bdb379e2))
 
 ## [3.0.0] (2023-07-13)
 
