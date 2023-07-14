@@ -9,7 +9,7 @@ type RULActionProps = {
   index: number;
   discipline: string;
   content: string;
-  cost: number;
+  cost: number | string;
 };
 
 type ContentProps = {
@@ -19,7 +19,7 @@ type ContentProps = {
 type DisciplineProps = {
   discipline: string;
   content: string;
-  cost: number;
+  cost: number | string;
 };
 
 export { RULProps, DisciplineProps };
