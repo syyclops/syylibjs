@@ -29,6 +29,7 @@ export { default as UxToolTip } from "./components/ToolTip";
 export { default as UxRUL } from "./components/RUL";
 export { default as UxCollapse } from "./components/Collapse";
 export { default as UxPopover } from "./components/Popover";
+export {default as UxTextArea} from "./components/TextArea";
 
 //Props
 export { PMActionProps, ContentProps } from "./types/pmcalendar";
