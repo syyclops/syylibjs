@@ -1,13 +1,12 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
 
-### [3.0.2](https://github.com/syyclops/syylibjs/compare/v3.0.1...v3.0.2) (2023-07-24)
+### [3.0.2] (2023-07-24)
 
+### Polish
 
-### Features
-
-* **polish:** rul component ([0ffcd2b](https://github.com/syyclops/syylibjs/commit/0ffcd2b51aac06a4062aab072576d7ffd2b9ec22))
+- **polish:** tooltip component ([0ffcd2b](https://github.com/syyclops/syylibjs/commit/0ffcd2b51aac06a4062aab072576d7ffd2b9ec22))
 
 ### [3.0.1] (2023-07-14)
 
