@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+### [3.0.2] (2023-07-24)
+
+### Polish
+
+- **polish:** tooltip component ([0ffcd2b](https://github.com/syyclops/syylibjs/commit/0ffcd2b51aac06a4062aab072576d7ffd2b9ec22))
+
 ### [3.0.1] (2023-07-14)
 
 ### Features

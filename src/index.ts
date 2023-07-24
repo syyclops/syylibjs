@@ -30,6 +30,7 @@ export { default as UxRUL } from "./components/RUL";
 export { default as UxCollapse } from "./components/Collapse";
 export { default as UxPopover } from "./components/Popover";
 export {default as UxTextArea} from "./components/TextArea";
+export { default as UxEnergyBarGraph } from "./components/EnergyBarGraph";
 
 //Props
 export { PMActionProps, ContentProps } from "./types/pmcalendar";
