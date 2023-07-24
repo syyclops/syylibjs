@@ -29,15 +29,15 @@ const TextArea = ({
       rows={height}
       cols={width}
       disabled={textAreaDisbled}
-      placeholder={placeholder ? placeholder : "TextArea"}
+      placeholder={placeholder}
       onClick={onAction}
       className={twMerge(
         classNames(
           width,
           variants[variant],
           disableResize ? "resize-none" : "resize",
-          rounded ? "rounded-[1.5rem]" : "rounded-lg",
-          "not-italic  border-none outline-none  pl-4"
+          rounded ? "rounded-[1.5rem] pl-2" : "rounded-lg",
+          "not-italic  border-none outline-none"
         ),
         cx
       )}
