@@ -16,7 +16,7 @@ const ToolTip = ({
 
   return (
     <button
-      className="relative cursor-pointer text-white bg-transparent border-none"
+      className="w-full h-full relative cursor-pointer text-white bg-transparent border-none p-0"
       onMouseOver={() => setHover(true)}
       onFocus={() => setHover(true)}
       onBlur={() => setHover(false)}
