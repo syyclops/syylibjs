@@ -1,15 +1,12 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
 
-## [4.2.0](https://github.com/syyclops/syylibjs/compare/v4.1.0...v4.2.0) (2023-07-26)
-
-## [4.1.0](https://github.com/syyclops/syylibjs/compare/v4.0.0...v4.1.0) (2023-07-26)
-
+## [4.2.0] (2023-07-26)
 
 ### Features
 
-* ****new-feature**:** add fileUpload component ([532659d](https://github.com/syyclops/syylibjs/commit/532659d22f319a654b107f876da78c135cee30f8))
+- **new-feature**: add fileUpload component ([532659d](https://github.com/syyclops/syylibjs/commit/532659d22f319a654b107f876da78c135cee30f8))
 
 ## [4.0.0] (2023-07-24)
 
