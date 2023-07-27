@@ -12,8 +12,17 @@ type ActionProps = {
     | "success"
     | "warning"
     | "info"
-    | "dark";
+    | "dark"
+    | "darker"
+    | "darkest"
+    | "mid-100"
+    | "mid-200"
+    | "mid-300"
+    | "light"
+    | "lighter"
+    | "lightest";
   size?: "xs" | "sm" | "md" | "lg";
+  iconSize?: number;
   leftIcon?: IconType;
   rightIcon?: IconType;
   clickable?: boolean;

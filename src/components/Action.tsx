@@ -22,6 +22,7 @@ const Action = ({
   loadingIcon,
   animate = false,
   cx = "",
+  iconSize,
 }: ActionProps) => {
   const LeftIcon: IconType = leftIcon!;
   const RightIcon: IconType = rightIcon!;
@@ -54,9 +55,9 @@ const Action = ({
       disabled={!clickable}
     >
       <>
-        {leftIcon && <LeftIcon className="mr-2" />}
+        {leftIcon && <LeftIcon className="mr-2" size={iconSize} />}
         {children}
-        {rightIcon && <RightIcon className="ml-2" />}
+        {rightIcon && <RightIcon className="ml-2" size={iconSize} />}
         {loading && (
           <div
             className={classNames(
@@ -70,7 +71,11 @@ const Action = ({
             )}
           >
             <div className={classNames(animate ? "animate-spin" : "")}>
-              {loadingIcon ? <LoadingIcon /> : <BiLoaderAlt />}
+              {loadingIcon ? (
+                <LoadingIcon size={iconSize} />
+              ) : (
+                <BiLoaderAlt size={iconSize} />
+              )}
             </div>
           </div>
         )}
