@@ -1,14 +1,12 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
 
-## [4.3.0](https://github.com/syyclops/syylibjs/compare/v4.2.1...v4.3.0) (2023-08-07)
-
+## [4.3.0] (2023-08-07)
 
 ### Features
 
-* **new-feature:** date picker component ([cc7174c](https://github.com/syyclops/syylibjs/commit/cc7174c8e5f4ac8c49513b4b0b9593d14b3ab14b))
-* **polish:** action props ([8e58319](https://github.com/syyclops/syylibjs/commit/8e583191c42e5e85f6293837d481f526ea5c84e9))
+- **new-feature:** date picker component ([cc7174c](https://github.com/syyclops/syylibjs/commit/cc7174c8e5f4ac8c49513b4b0b9593d14b3ab14b))
 
 ### [4.2.1] (2023-07-27)
 
