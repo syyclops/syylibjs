@@ -137,7 +137,7 @@ const DatePicker = ({
         <div className="relative flex bg-light-neutral-100 text-sm">
           <input
             ref={monthRef}
-            className="w-7 outline-none font-bold placeholder:text-xs bg-light-neutral-200  focus:bg-primary-light px-1 rounded text-center"
+            className="w-7 outline-none font-bold placeholder:text-xs bg-light-neutral-200 text-dark-neutral-300 focus:bg-primary-light px-1 rounded text-center"
             type="text"
             value={textMonth}
             placeholder="MM"
@@ -162,7 +162,7 @@ const DatePicker = ({
           <div className="mx-0.5">/</div>
           <input
             ref={dateRef}
-            className="w-7 outline-none font-bold placeholder:text-xs bg-light-neutral-200 focus:bg-primary-light px-1 rounded text-center"
+            className="w-7 outline-none font-bold placeholder:text-xs bg-light-neutral-200 text-dark-neutral-300 focus:bg-primary-light px-1 rounded text-center"
             type="text"
             value={textDate}
             placeholder="DD"
@@ -187,7 +187,7 @@ const DatePicker = ({
           <div className="mx-0.5">/</div>
           <input
             ref={yearRef}
-            className="w-11 outline-none font-bold placeholder:text-xs bg-light-neutral-200 focus:bg-primary-light px-1 rounded text-center"
+            className="w-11 outline-none font-bold placeholder:text-xs bg-light-neutral-200 text-dark-neutral-300 focus:bg-primary-light px-1 rounded text-center"
             type="text"
             value={textYear}
             placeholder="YYYY"
