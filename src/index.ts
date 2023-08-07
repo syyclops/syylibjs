@@ -32,6 +32,7 @@ export { default as UxPopover } from "./components/Popover";
 export { default as UxTextArea } from "./components/TextArea";
 export { default as UxEnergyBarGraph } from "./components/EnergyBarGraph";
 export { default as UxFileUpload } from "./components/FileUpload";
+export { default as UxDatePicker } from "./components/DatePicker";
 
 //Props
 export { PMActionProps, ContentProps } from "./types/pmcalendar";
