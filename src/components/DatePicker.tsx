@@ -134,7 +134,7 @@ const DatePicker = ({
           inputHeight
         )}
       >
-        <div className="relative flex bg-light-neutral-100 text-sm">
+        <div className="relative flex bg-light-neutral-100 text-sm text-dark-neutral-300">
           <input
             ref={monthRef}
             className="w-7 outline-none font-bold placeholder:text-xs bg-light-neutral-200 text-dark-neutral-300 focus:bg-primary-light px-1 rounded text-center"
