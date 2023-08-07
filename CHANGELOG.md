@@ -1,14 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
 
-### [4.3.2](https://github.com/syyclops/syylibjs/compare/v4.3.1...v4.3.2) (2023-08-07)
+### [4.3.2] (2023-08-07)
 
 
 ### Features
 
 * **new-feature:** date picker component ([441e4f3](https://github.com/syyclops/syylibjs/commit/441e4f351cc97361725ff28bb3dbf78134d1c080))
-* **new-feature:** date picker component ([43edebf](https://github.com/syyclops/syylibjs/commit/43edebf3a1d04d8d3d08f9b14ad5d16b64a531e2))
 
 ### [4.3.1] (2023-08-07)
 
