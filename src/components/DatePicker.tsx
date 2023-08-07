@@ -487,10 +487,10 @@ const DatePicker = ({
                   <div
                     key={i}
                     className={classnames(
-                      "flex justify-center items-center w-[calc(28%-1rem)] h-[15%] font-semibold text-sm rounded-md cursor-pointer mx-1",
+                      "flex justify-center items-center w-[calc(28%-1rem)] h-[15%] font-semibold text-sm rounded-md cursor-pointer mx-1 text-dark-neutral-300",
                       i === currentMonth
                         ? "border !border-dark-neutral-300"
-                        : "text-dark-neutral-300",
+                        : "!text-dark-neutral-300",
                       i === month
                         ? "!bg-light-neutral-200 !text-primary hover:border-primary"
                         : ""
