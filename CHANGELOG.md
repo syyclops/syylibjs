@@ -1,35 +1,31 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
 
-### [4.3.4](https://github.com/syyclops/syylibjs/compare/v4.3.3...v4.3.4) (2023-08-08)
-
-
-### Features
-
-* **polish:** date picker component ([1075079](https://github.com/syyclops/syylibjs/commit/10750791aeee6521747fab9967fdc37f15341b02))
-
-### [4.3.3](https://github.com/syyclops/syylibjs/compare/v4.3.2...v4.3.3) (2023-08-07)
-
+### [4.3.4] (2023-08-08)
 
 ### Features
 
-* **new-feature:** date picker component ([840fee3](https://github.com/syyclops/syylibjs/commit/840fee3a7b54aa75011dac61cb62adc3e91cfa57))
-* **polish:** date picker component ([360936b](https://github.com/syyclops/syylibjs/commit/360936b7b4a9795134daf6982e8d157c4e173256))
+- **polish:** date picker component ([1075079](https://github.com/syyclops/syylibjs/commit/10750791aeee6521747fab9967fdc37f15341b02))
+
+### [4.3.3] (2023-08-07)
+
+### Features
+
+- **new-feature:** date picker component ([840fee3](https://github.com/syyclops/syylibjs/commit/840fee3a7b54aa75011dac61cb62adc3e91cfa57))
+- **polish:** date picker component ([360936b](https://github.com/syyclops/syylibjs/commit/360936b7b4a9795134daf6982e8d157c4e173256))
 
 ### [4.3.2] (2023-08-07)
 
-
 ### Features
 
-* **new-feature:** date picker component ([441e4f3](https://github.com/syyclops/syylibjs/commit/441e4f351cc97361725ff28bb3dbf78134d1c080))
+- **new-feature:** date picker component ([441e4f3](https://github.com/syyclops/syylibjs/commit/441e4f351cc97361725ff28bb3dbf78134d1c080))
 
 ### [4.3.1] (2023-08-07)
 
-
 ### Features
 
-* **new-feature:** date picker component ([3d24033](https://github.com/syyclops/syylibjs/commit/3d240338102e8c120d8ca885bda17a0282de8029))
+- **new-feature:** date picker component ([3d24033](https://github.com/syyclops/syylibjs/commit/3d240338102e8c120d8ca885bda17a0282de8029))
 
 ## [4.3.0] (2023-08-07)
 
