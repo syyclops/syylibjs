@@ -211,7 +211,7 @@ const DatePicker = ({
           />
         </div>
         <div
-          className="flex justify-center w-[30%] cursor-pointer"
+          className="flex justify-center pr-3 cursor-pointer"
           onClick={() => {
             if (
               moment(`${textMonth}/${textDate}/${textYear}}`, "MM/DD/YYYY")
@@ -276,6 +276,7 @@ const DatePicker = ({
 
                 if (month === 1) {
                   setPreviousMonth(12);
+                  renderDates(month, date, year, 12, year, nextMonth, year);
                 }
                 if (month === 0) {
                   setMonth(11);
@@ -291,6 +292,7 @@ const DatePicker = ({
                     m: zeroPad((12).toString()),
                     y: (year - 1).toString(),
                   });
+                  renderDates(11, date, year - 1, 9, year - 1, 1, year);
                 } else {
                   if (month === 11 && nextYear !== year) {
                     setNextMonth(12);
@@ -303,6 +305,7 @@ const DatePicker = ({
                       m: zeroPad((12).toString()),
                       y: year.toString(),
                     });
+                    renderDates(10, date, year, 10, previousYear, 12, year);
                   } else {
                     setNextMonth(nexMonth - 1);
                     if (month !== 1) {
@@ -315,6 +318,15 @@ const DatePicker = ({
                       m: zeroPad(currMonth.toString()),
                       y: (year - 1).toString(),
                     });
+                    renderDates(
+                      currMonth - 1,
+                      date,
+                      year,
+                      month !== 1 ? prevMonth - 1 : prevMonth,
+                      year,
+                      nexMonth - 1,
+                      year
+                    );
                   }
                 }
               }}
@@ -350,6 +362,15 @@ const DatePicker = ({
                     m: zeroPad((1).toString()),
                     y: (year + 1).toString(),
                   });
+                  renderDates(
+                    0,
+                    date,
+                    year + 1,
+                    12,
+                    year,
+                    nexMonth + 1,
+                    year + 1
+                  );
                 } else {
                   if (currMonth === 0) {
                     setPreviousMonth(1);
@@ -362,6 +383,15 @@ const DatePicker = ({
                       m: zeroPad((currMonth + 2).toString()),
                       y: year.toString(),
                     });
+                    renderDates(
+                      currMonth + 1,
+                      date,
+                      year,
+                      1,
+                      year,
+                      nexMonth + 1,
+                      year
+                    );
                   } else {
                     if (nextMonth === 12) {
                       setNextMonth(1);
@@ -377,6 +407,15 @@ const DatePicker = ({
                       m: zeroPad((currMonth + 2).toString()),
                       y: year.toString(),
                     });
+                    renderDates(
+                      currMonth + 1,
+                      date,
+                      year,
+                      prevMonth + 1,
+                      year,
+                      nextMonth === 12 ? 1 : nexMonth + 1,
+                      nextMonth === 12 ? year + 1 : year
+                    );
                   }
                 }
               }}
@@ -453,6 +492,15 @@ const DatePicker = ({
                       m: zeroPad((currentMonth + 1).toString()),
                       y: (year - 1).toString().toString(),
                     });
+                    renderDates(
+                      currentMonth,
+                      currentDate,
+                      year,
+                      currentMonth === 0 ? 12 : currentMonth,
+                      currentMonth === 0 ? year - 1 : year,
+                      currentMonth === 11 ? 1 : currentMonth + 2,
+                      currentMonth === 11 ? year + 1 : year
+                    );
                   }}
                 />
                 <div className="flex items-center">
@@ -466,6 +514,15 @@ const DatePicker = ({
                 <TfiAngleRight
                   className="cursor-pointer text-dark-neutral-300"
                   onClick={() => {
+                    renderDates(
+                      currentMonth,
+                      currentDate,
+                      year,
+                      currentMonth === 0 ? 12 : currentMonth,
+                      currentMonth === 0 ? year - 1 : year,
+                      currentMonth === 11 ? 1 : currentMonth + 2,
+                      currentMonth === 11 ? year + 1 : year
+                    );
                     setPreviousYear(year + 1);
                     setNextYear(year + 1);
                     setYear(year + 1);
@@ -500,6 +557,15 @@ const DatePicker = ({
                       setDate(currentDate);
                       setTextDate(zeroPad(currentDate.toString()));
                       if (i === 0) {
+                        renderDates(
+                          0,
+                          currentDate,
+                          year,
+                          12,
+                          year - 1,
+                          i + 2,
+                          year
+                        );
                         setPreviousYear(year - 1);
                         setPreviousMonth(12);
                         setMonth(0);
@@ -511,6 +577,15 @@ const DatePicker = ({
                           y: year.toString().toString(),
                         });
                       } else if (i === 11) {
+                        renderDates(
+                          i,
+                          currentDate,
+                          year,
+                          i - 2,
+                          year,
+                          1,
+                          year + 1
+                        );
                         setPreviousMonth(i - 2);
                         setNextMonth(1);
                         setNextYear(year + 1);
@@ -522,6 +597,7 @@ const DatePicker = ({
                           y: year.toString().toString(),
                         });
                       } else {
+                        renderDates(i, currentDate, year, i, year, i + 2, year);
                         setMonth(i);
                         setTextMonth(zeroPad(`${i + 1}`).toString());
                         setPreviousMonth(i);
