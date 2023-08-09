@@ -14,8 +14,10 @@ const PMCalendar = ({
   index,
   content,
   onNav,
-  footer,
+  year,
+  quater,
   onAction,
+  footer,
 }: PMCalendarProps) => {
   return (
     <div
@@ -34,7 +36,7 @@ const PMCalendar = ({
           "font-bold"
         )}
       >
-        <button
+        {/* <button
           className={classnames(
             "border-[#00000000] mr-3 bg-transparent",
             index === 0 ? "cursor-not-allowed opacity-20" : "cursor-pointer"
@@ -43,9 +45,9 @@ const PMCalendar = ({
           onClick={() => onNav("prev")}
         >
           <FiChevronLeft />
-        </button>
-        <div>{header[index]}</div>
-        <button
+        </button> */}
+        <div>{header}</div>
+        {/* <button
           className={classnames(
             "border-[#00000000] ml-3 bg-transparent",
             header.length === 1 || index >= header.length - 1
@@ -56,7 +58,7 @@ const PMCalendar = ({
           onClick={() => onNav("next")}
         >
           <FiChevronRight />
-        </button>
+        </button> */}
       </div>
       <div
         className={classnames(

@@ -1,10 +1,12 @@
 type PMCalendarProps = {
-  header: string[];
+  header: string;
   index: number;
   content: ContentProps[];
   onNav: (n: string) => void;
   footer: JSX.Element;
   onAction: (a: PMActionProps) => void;
+  year: number;
+  quater: string;
 };
 
 type PMActionProps = {
