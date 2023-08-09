@@ -5,8 +5,6 @@ type PMCalendarProps = {
   onNav: (n: string) => void;
   footer: JSX.Element;
   onAction: (a: PMActionProps) => void;
-  year: number;
-  quater: string;
 };
 
 type PMActionProps = {
