@@ -1,21 +1,18 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file
 
-## [4.5.0](https://github.com/syyclops/syylibjs/compare/v4.4.0...v4.5.0) (2023-08-09)
-
+## [4.5.0] (2023-08-09)
 
 ### Features
 
-* **polish:** pmCalendar  component ([159455e](https://github.com/syyclops/syylibjs/commit/159455eaa2b2ba15372f601fe85fde1437ec91ec))
-* **polish:** pmCalendar  component ([4bad652](https://github.com/syyclops/syylibjs/commit/4bad652eab6348c86d04c01687fed39021f21835))
+- **polish:** pmCalendar component ([159455e](https://github.com/syyclops/syylibjs/commit/159455eaa2b2ba15372f601fe85fde1437ec91ec))
 
 ## [4.4.0] (2023-08-09)
 
-
 ### Features
 
-* **polish:** pmCalendar  component ([f689375](https://github.com/syyclops/syylibjs/commit/f6893754af03d6d8d4dcef7b1ebf1048fd69c209))
+- **polish:** pmCalendar component ([f689375](https://github.com/syyclops/syylibjs/commit/f6893754af03d6d8d4dcef7b1ebf1048fd69c209))
 
 ### [4.3.4] (2023-08-08)
 
