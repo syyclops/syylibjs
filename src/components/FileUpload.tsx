@@ -1,6 +1,7 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import classnames from "classnames";
+import { FileUploadProps } from "../types/fileUpload";
 
 const FileUpload = ({
   onDragOver,
@@ -13,18 +14,8 @@ const FileUpload = ({
   bg = "bg-transparent",
   cx = "",
   include = "",
-}: {
-  onDragOver: (e: React.DragEvent<HTMLDivElement>) => void;
-  onDrop: (e: React.DragEvent<HTMLDivElement>) => void;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  width?: string;
-  height?: string;
-  border?: string;
-  bg?: string;
-  children: JSX.Element | JSX.Element[];
-  cx?: string;
-  include?: string;
-}) => {
+  id,
+}: FileUploadProps) => {
   const fileInputRef = React.useRef<HTMLInputElement>(null);
 
   return (
@@ -36,11 +27,12 @@ const FileUpload = ({
       onDragOver={onDragOver}
       onDrop={onDrop}
       onClick={() => {
-        fileInputRef.current?.click();
+        fileInputRef.current!.click();
       }}
     >
       {children}
       <input
+        id={id}
         className="hidden"
         ref={fileInputRef}
         title="upload"
