@@ -1,18 +1,6 @@
 # Changelog
 
-All notable changes to this project will be documented in this file
-
-## [4.5.0] (2023-08-09)
-
-### Features
-
-- **polish:** pmCalendar component ([159455e](https://github.com/syyclops/syylibjs/commit/159455eaa2b2ba15372f601fe85fde1437ec91ec))
-
-## [4.4.0] (2023-08-09)
-
-### Features
-
-- **polish:** pmCalendar component ([f689375](https://github.com/syyclops/syylibjs/commit/f6893754af03d6d8d4dcef7b1ebf1048fd69c209))
+All notable changes to this project will be documented in this file.
 
 ## [4.6.0] (2023-08-14)
 
