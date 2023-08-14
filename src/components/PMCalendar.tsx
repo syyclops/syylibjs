@@ -14,8 +14,6 @@ const PMCalendar = ({
   index,
   content,
   onNav,
-  year,
-  quater,
   onAction,
   footer,
 }: PMCalendarProps) => {

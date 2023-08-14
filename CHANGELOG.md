@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.7.1] (2023-08-14)
+
+### Features
+
+- **polish:** fileUpload component
+
 ## [4.7.0] (2023-08-14)
 
 ### Features
