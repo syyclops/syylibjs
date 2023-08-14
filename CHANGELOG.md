@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.5.0](https://github.com/syyclops/syylibjs/compare/v4.3.4...v4.5.0) (2023-08-14)
+
+
+### Features
+
+* **polish:** date picker component ([439e97f](https://github.com/syyclops/syylibjs/commit/439e97f9878375e16e24d784aa3e476ca1adde98))
+* **polish:** fileUpload component ([feeda12](https://github.com/syyclops/syylibjs/commit/feeda128930e8377efec2697dc89c98da7ad417d))
+
 ## [4.4.0](https://github.com/syyclops/syylibjs/compare/v4.3.4...v4.4.0) (2023-08-14)
 
 
