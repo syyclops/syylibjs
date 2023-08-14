@@ -14,6 +14,26 @@ All notable changes to this project will be documented in this file
 
 - **polish:** pmCalendar component ([f689375](https://github.com/syyclops/syylibjs/commit/f6893754af03d6d8d4dcef7b1ebf1048fd69c209))
 
+## [4.6.0] (2023-08-14)
+
+### Features
+
+- **polish:** fileUpload component ([feeda12](https://github.com/syyclops/syylibjs/commit/feeda128930e8377efec2697dc89c98da7ad417d))
+
+## [4.5.0] (2023-08-14)
+
+### Features
+
+- **polish:** date picker component ([439e97f](https://github.com/syyclops/syylibjs/commit/439e97f9878375e16e24d784aa3e476ca1adde98))
+- **polish:** fileUpload component ([feeda12](https://github.com/syyclops/syylibjs/commit/feeda128930e8377efec2697dc89c98da7ad417d))
+
+## [4.4.0] (2023-08-14)
+
+### Features
+
+- **polish:** date picker component ([439e97f](https://github.com/syyclops/syylibjs/commit/439e97f9878375e16e24d784aa3e476ca1adde98))
+- **polish:** fileUpload component ([feeda12](https://github.com/syyclops/syylibjs/commit/feeda128930e8377efec2697dc89c98da7ad417d))
+
 ### [4.3.4] (2023-08-08)
 
 ### Features
