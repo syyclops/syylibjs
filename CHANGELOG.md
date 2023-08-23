@@ -1,6 +1,15 @@
-# Changelog 
+# Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [4.8.0](https://github.com/syyclops/syylibjs/compare/v4.7.0...v4.8.0) (2023-08-23)
+
+
+### Features
+
+* **polish:** fileUpload component ([4589072](https://github.com/syyclops/syylibjs/commit/458907204295b4e9f7350170cc5d562a6542a4e5))
+* **polish:** fileUpload component ([1cae08a](https://github.com/syyclops/syylibjs/commit/1cae08a293ccea6c33610e4ba0f1a351130a213f))
+* **polish:** input component ([4c2d327](https://github.com/syyclops/syylibjs/commit/4c2d327b620cafabe3aeeb958e74f64e6197e5f0))
 
 ## [4.7.1] (2023-08-14)
 
