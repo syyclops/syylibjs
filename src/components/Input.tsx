@@ -19,6 +19,8 @@ const Input = ({
   rightIcon,
   onClick,
   onKeyDown,
+  onFocus,
+  onBlur,
   onType,
   cxLayout = "",
   cxInput = "",
@@ -58,6 +60,8 @@ const Input = ({
         type={type}
         onKeyDown={onKeyDown}
         onChange={onType}
+        onFocus={onFocus}
+        onBlur={onBlur}
         placeholder={placeholder ? placeholder : "Start typing..."}
         className={twMerge(
           classNames(
