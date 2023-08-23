@@ -1,3 +1,4 @@
+import React from "react";
 import { IconType } from "react-icons";
 
 type InputProps = {
@@ -7,6 +8,8 @@ type InputProps = {
   onType: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onClick?: () => void;
   onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
+  onFocus?: (e:React.FocusEvent<HTMLInputElement>)=> void;
+  onBlur?: (e:React.FocusEvent<HTMLInputElement>)=>void;
   placeholder?: string;
   leftIcon?: IconType;
   rightIcon?: IconType;
