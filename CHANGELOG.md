@@ -1,6 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [4.9.0](https://github.com/syyclops/syylibjs/compare/v4.8.0...v4.9.0) (2023-08-24)
+
+
+### Features
+
+* **polish:** date-;icker component ([dbded53](https://github.com/syyclops/syylibjs/commit/dbded5344244d13d147d703e14fe8468d9cde0c3))
 
 ## [4.8.0] (2023-08-23)
 
