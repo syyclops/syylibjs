@@ -466,6 +466,7 @@ const DatePicker = ({
                         y: year.toString(),
                       });
                     }
+                    setShowCalendar(false);
                   }}
                 >
                   {d}
