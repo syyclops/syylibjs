@@ -55,9 +55,9 @@ const DatePicker = ({
   const [showMonthsYearList, setShowMonthsYearList] = React.useState(false);
   const [showCalendar, setShowCalendar] = React.useState(false);
 
-  const [textYear, setTextYear] = React.useState("");
-  const [textMonth, setTextMonth] = React.useState("");
-  const [textDate, setTextDate] = React.useState("");
+  const [textYear, setTextYear] = React.useState((year).toString());
+  const [textMonth, setTextMonth] = React.useState(zeroPad((month + 1).toString()));
+  const [textDate, setTextDate] = React.useState(zeroPad((date).toString()));
 
   const monthRef = React.useRef<HTMLInputElement>(null);
   const dateRef = React.useRef<HTMLInputElement>(null);
