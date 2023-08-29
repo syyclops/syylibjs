@@ -16,6 +16,7 @@ type DropdownProps = {
   title: JSX.Element | string;
   cxLayout?: string;
   cxAction?: string;
+  enableSearch?: boolean;
 };
 
 export { DropdownProps };

@@ -1,6 +1,6 @@
 // Author - Manish
 
-import React, { useRef } from "react";
+import React from "react";
 import { twMerge } from "tailwind-merge";
 import classNames from "classnames";
 import { InputProps } from "../types/input";
@@ -27,7 +27,7 @@ const Input = ({
 }: InputProps) => {
   const LeftIcon: IconType = leftIcon!;
   const RightIcon: IconType = rightIcon!;
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = 'useRef' in React ? React?.useRef<HTMLInputElement>(null) : null;
 
   return (
     <div
@@ -44,7 +44,7 @@ const Input = ({
         cxLayout
       )}
       onClick={() => {
-        inputRef.current!.focus();
+        inputRef?.current?.focus();
         onClick && onClick();
       }}
     >

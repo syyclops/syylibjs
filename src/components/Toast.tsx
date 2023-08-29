@@ -39,7 +39,7 @@ const Toast = ({
     }
   };
 
-  const Icon: IconType = icons[variant];
+  const Icon: IconType | undefined = icons[variant];
 
   return (
     <>
@@ -55,7 +55,7 @@ const Toast = ({
         >
           <div className="flex justify-between items-center">
             <div className="flex items-center">
-              <Icon className="mr-3" />
+              {Icon && <Icon className="mr-3" />}
               <span className="text-sm font-semibold">{message}</span>
             </div>
             <button
