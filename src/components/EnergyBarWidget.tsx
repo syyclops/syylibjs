@@ -29,7 +29,7 @@ const EnergyBarWidget = ({
     <div
       className={twMerge(
         classnames(
-          "w-full h-[17.875rem] border border-mid-neutral-200 bg-dark-neutral-300 rounded-lg text-light-neutral-100"
+          "w-full h-[17rem] border border-mid-neutral-200 bg-dark-neutral-300 rounded-lg text-light-neutral-100"
         )
       )}
       style={{
