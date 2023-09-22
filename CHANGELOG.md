@@ -1,6 +1,14 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [4.11.0](https://github.com/syyclops/syylibjs/compare/v4.10.0...v4.11.0) (2023-09-22)
+
+
+### Features
+
+* **new-feature:** energy widget component ([7ee613a](https://github.com/syyclops/syylibjs/commit/7ee613a80273a9393e0a92bc80f29e6f84c8131a))
+* **polish:** date picker component ([88659a2](https://github.com/syyclops/syylibjs/commit/88659a230beb990eeb4847cacd49d7a34b816acf))
 
 ## [4.10.0] (2023-08-29)
 
