@@ -3,6 +3,7 @@ type THeadProps = {
   divideX?: boolean;
   onClick?: () => void;
   cx?: string;
+  colspan?: number;
 };
 
 export { THeadProps };
