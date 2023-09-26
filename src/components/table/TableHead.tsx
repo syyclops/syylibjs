@@ -8,6 +8,7 @@ const TableHead = ({
   divideX = true,
   onClick,
   cx = "",
+  colspan = 1,
 }: THeadProps) => {
   return (
     <th
@@ -22,6 +23,7 @@ const TableHead = ({
         ),
         cx
       )}
+      colSpan={colspan}
       onClick={() => onClick && onClick()}
       scope="col"
     >
