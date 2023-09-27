@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.1.2](https://github.com/syyclops/syylibjs/compare/v5.1.0...v5.1.2) (2023-09-27)
+
+
+### Features
+
+* **polish:** added comment to index.ts ([71a8713](https://github.com/syyclops/syylibjs/commit/71a8713275749118b153afb313050efa7dc5c679))
+
 ### [5.2.1](https://github.com/syyclops/syylibjs/compare/v5.1.0...v5.2.1) (2023-09-27)
 
 
