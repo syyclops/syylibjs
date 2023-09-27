@@ -1,4 +1,6 @@
-// Components
+/**
+ * All the components
+ */
 export { default as UxParagraph } from "./components/Paragraph";
 export { default as UxTitle } from "./components/Title";
 export { default as UxToast } from "./components/Toast";
