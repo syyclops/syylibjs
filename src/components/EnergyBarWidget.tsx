@@ -2,17 +2,7 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 import classnames from "classnames";
 import ToolTip from "./ToolTip";
-
-type ContentType = {
-  percent: string;
-  tooltip: string | JSX.Element;
-  bg: string;
-  category?: string;
-};
-
-type ContentTypeArray = ContentType[];
-
-type ContentProps = { label: string; data: ContentTypeArray };
+import { ContentType, ContentProps, ContentTypeArray } from "../types/energy";
 
 const EnergyBarWidget = ({
   header,
@@ -57,33 +47,35 @@ const EnergyBarWidget = ({
         {content.map((contentArray: ContentProps, contentIndex: number) => {
           return (
             <div className="relative w-[5%] h-[80%]" key={`${contentIndex}`}>
-              {contentArray.data.map((c: ContentType, i: number) => {
-                return (
-                  <div
-                    className="w-full absolute bottom-0"
-                    style={{
-                      height: c.percent,
-                    }}
-                    key={i}
-                  >
-                    <ToolTip
-                      title={c.tooltip}
-                      position={
-                        contentIndex <= content.length / 2 - 1
-                          ? "right-top"
-                          : "left-top"
-                      }
+              {(contentArray.data as ContentTypeArray).map(
+                (c: ContentType, i: number) => {
+                  return (
+                    <div
+                      className="w-full absolute bottom-0"
+                      style={{
+                        height: c.percent,
+                      }}
+                      key={i}
                     >
-                      <div
-                        className={`w-full h-full ${c.bg} rounded-full`}
-                        onClick={() => {
-                          onAction({ data: contentArray, clusterData: c });
-                        }}
-                      />
-                    </ToolTip>
-                  </div>
-                );
-              })}
+                      <ToolTip
+                        title={c.tooltip!}
+                        position={
+                          contentIndex <= content.length / 2 - 1
+                            ? "right-top"
+                            : "left-top"
+                        }
+                      >
+                        <div
+                          className={`w-full h-full ${c.bg} rounded-full`}
+                          onClick={() => {
+                            onAction({ data: contentArray, clusterData: c });
+                          }}
+                        />
+                      </ToolTip>
+                    </div>
+                  );
+                }
+              )}
               <div
                 className="flex justify-center items-end w-full text-xs"
                 style={{
@@ -106,7 +98,7 @@ const EnergyBarWidget = ({
           "rounded-b-lg"
         )}
         style={{
-          padding: "0px 0.7rem",
+          padding: "0rem 0.7rem",
         }}
       >
         {footer}
