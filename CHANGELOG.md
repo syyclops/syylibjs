@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.2.2](https://github.com/syyclops/syylibjs/compare/v5.2.1...v5.2.2) (2023-10-03)
+
+
+### Features
+
+* **polish:** energy widget component ([25c4f9f](https://github.com/syyclops/syylibjs/commit/25c4f9f684e2c39f764a8f9cf2d8a9b83c402a0a))
+
+
+### Bug Fixes
+
+* RUL NaN bug ([205c85a](https://github.com/syyclops/syylibjs/commit/205c85abce6481cd4cc40ab68febc50262f7c90b))
+
 ### [5.2.1](https://github.com/syyclops/syylibjs/compare/v5.2.0...v5.2.1) (2023-10-03)
 
 
