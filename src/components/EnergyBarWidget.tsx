@@ -9,18 +9,21 @@ const EnergyBarWidget = ({
   content,
   footer,
   onAction,
+  cx = "",
 }: {
   header: JSX.Element | string;
   content: ContentProps[];
   footer: JSX.Element | string;
   onAction: (a: { data: ContentProps; clusterData: ContentType }) => void;
+  cx?: string;
 }) => {
   return (
     <div
       className={twMerge(
         classnames(
-          "w-full h-[17rem] border border-mid-neutral-200 bg-dark-neutral-300 rounded-lg text-light-neutral-100"
-        )
+          "w-full h-17rem border border-mid-neutral-200 bg-dark-neutral-300 rounded-lg text-light-neutral-100"
+        ),
+        cx
       )}
       style={{
         border: "1px solid #45518D",
