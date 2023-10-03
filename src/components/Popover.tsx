@@ -13,13 +13,39 @@ const Popover = ({
   cx = "",
   open = false,
   rounded = "rounded-lg",
+  onClickAway,
 }: Omit<ToolTipProps, "title"> & {
   content: JSX.Element | string;
   open: boolean;
   rounded?: string;
+  onClickAway: () => void;
 }) => {
+  const ref = React.useRef<HTMLDivElement | null>(null);
+
+  React.useEffect(() => {
+    function handleClickAway(event: MouseEvent) {
+      if (ref.current) {
+        if (
+          !ref.current.contains(event.target as Node) &&
+          open &&
+          onClickAway
+        ) {
+          onClickAway();
+        }
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickAway);
+    return () => {
+      document.removeEventListener("mousedown", handleClickAway);
+    };
+  }, [ref, open, onClickAway]);
+
   return (
-    <div className="w-fit relative text-white bg-transparent border-none">
+    <div
+      className="w-fit relative text-white bg-transparent border-none"
+      ref={ref}
+    >
       {open && (
         <div
           className={twMerge(
@@ -32,7 +58,6 @@ const Popover = ({
               "mt-2"
             ),
             "before:border-none",
-
             cx
           )}
         >

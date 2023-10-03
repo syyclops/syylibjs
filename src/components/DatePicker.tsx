@@ -55,9 +55,11 @@ const DatePicker = ({
   const [showMonthsYearList, setShowMonthsYearList] = React.useState(false);
   const [showCalendar, setShowCalendar] = React.useState(false);
 
-  const [textYear, setTextYear] = React.useState((year).toString());
-  const [textMonth, setTextMonth] = React.useState(zeroPad((month + 1).toString()));
-  const [textDate, setTextDate] = React.useState(zeroPad((date).toString()));
+  const [textYear, setTextYear] = React.useState(year.toString());
+  const [textMonth, setTextMonth] = React.useState(
+    zeroPad((month + 1).toString())
+  );
+  const [textDate, setTextDate] = React.useState(zeroPad(date.toString()));
 
   const monthRef = React.useRef<HTMLInputElement>(null);
   const dateRef = React.useRef<HTMLInputElement>(null);
@@ -123,10 +125,28 @@ const DatePicker = ({
       nextMonth,
       nextYear
     );
-  }, []);
+  }, [value]);
+
+  const ref = React.useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    function handleClickAway(event: MouseEvent) {
+      if (ref.current) {
+        if (!ref.current.contains(event.target as Node) && showCalendar) {
+          setShowMonthsYearList(false);
+          setShowCalendar(false);
+        }
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickAway);
+    return () => {
+      document.removeEventListener("mousedown", handleClickAway);
+    };
+  }, [ref, showCalendar, value]);
 
   return (
-    <div className="relative">
+    <div className="relative" ref={ref}>
       <div
         className={classnames(
           "flex justify-between items-center bg-light-neutral-100 rounded-2xl overflow-hidden pl-3 py-3",

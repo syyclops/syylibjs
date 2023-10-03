@@ -1,5 +1,6 @@
 type DropdownProps = {
   onAction: () => void;
+  onClickAway: () => void;
   variant?:
     | "primary"
     | "secondary"

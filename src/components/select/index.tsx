@@ -14,9 +14,31 @@ const Select = ({
   width = "w-[8rem]",
   open = false,
   onAction,
+  onClickAway,
   cxLayout,
   cxSelect,
 }: SelectProps) => {
+  const ref = React.useRef<HTMLDivElement | null>(null);
+
+  React.useEffect(() => {
+    function handleClickAway(event: MouseEvent) {
+      if (ref.current) {
+        if (
+          !ref.current.contains(event.target as Node) &&
+          open &&
+          onClickAway
+        ) {
+          onClickAway();
+        }
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickAway);
+    return () => {
+      document.removeEventListener("mousedown", handleClickAway);
+    };
+  }, [ref, open, onClickAway]);
+
   return (
     <div
       className={twMerge(
@@ -30,6 +52,7 @@ const Select = ({
         ),
         cxLayout
       )}
+      ref={ref}
     >
       <button
         role="select"

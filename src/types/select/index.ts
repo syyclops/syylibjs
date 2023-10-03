@@ -15,6 +15,7 @@ type SelectProps = {
   open: boolean;
   cxLayout?: string;
   cxSelect?: string;
+  onClickAway: () => void;
 };
 
 type SelectOptionProps = {

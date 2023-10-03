@@ -23,6 +23,7 @@ const Dropdown = ({
   rounded = false,
   cxLayout = "",
   cxAction = "",
+  onClickAway,
 }: Omit<
   ActionProps,
   | "clickable"
@@ -35,6 +36,27 @@ const Dropdown = ({
   | "cx"
 > &
   DropdownProps) => {
+  const ref = React.useRef<HTMLDivElement | null>(null);
+
+  React.useEffect(() => {
+    function handleClickAway(event: MouseEvent) {
+      if (ref.current) {
+        if (
+          !ref.current.contains(event.target as Node) &&
+          open &&
+          onClickAway
+        ) {
+          onClickAway();
+        }
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickAway);
+    return () => {
+      document.removeEventListener("mousedown", handleClickAway);
+    };
+  }, [ref, open, onClickAway]);
+
   return (
     <div
       className={twMerge(
@@ -45,6 +67,7 @@ const Dropdown = ({
         ),
         cxLayout
       )}
+      ref={ref}
     >
       <Action
         type={type}
