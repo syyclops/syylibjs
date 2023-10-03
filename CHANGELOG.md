@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0](https://github.com/syyclops/syylibjs/compare/v5.2.2...v6.0.0) (2023-10-03)
+
+
+### Features
+
+* **polish:** click away events ([896deab](https://github.com/syyclops/syylibjs/commit/896deabe2cd9a0901b1c79ef0d6a6c37ff82b0db))
+
 ### [5.2.2](https://github.com/syyclops/syylibjs/compare/v5.2.1...v5.2.2) (2023-10-03)
 
 
