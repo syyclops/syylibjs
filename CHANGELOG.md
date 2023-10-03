@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.2.1](https://github.com/syyclops/syylibjs/compare/v5.2.0...v5.2.1) (2023-10-03)
+
+
+### Features
+
+* **polish:** energy widget component ([370cbba](https://github.com/syyclops/syylibjs/commit/370cbba7942326b31537510ddd397183011e7c1b))
+
+## [5.2.0](https://github.com/syyclops/syylibjs/compare/v5.1.0...v5.2.0) (2023-09-29)
+
+
+### Features
+
+* **new-feature:** energy graph component ([5615733](https://github.com/syyclops/syylibjs/commit/56157330e504d7c88011b16b7cec82ae00934863))
+
 ## [5.1.0](https://github.com/syyclops/syylibjs/compare/v5.0.0...v5.1.0) (2023-09-22)
 
 
