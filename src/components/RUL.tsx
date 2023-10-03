@@ -180,7 +180,7 @@ const RUL = ({ header, content, footer, onAction }: RULProps) => {
                   }
                 >
                   <div>{c.content}</div>
-                  <div>${Number(c.cost).toLocaleString("en-us")}</div>
+                  <div>${c.cost}</div>
                 </button>
               ))}
           </div>
