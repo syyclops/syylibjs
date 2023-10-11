@@ -3,10 +3,12 @@ type RULProps = {
   content: ContentProps[];
   footer: JSX.Element | string;
   onAction: (a: RULActionProps) => void;
+  highlight?: { yearIndex: number; disciplineIndex: number };
 };
 
 type RULActionProps = {
-  index: number;
+  yearIndex: number;
+  disciplineIndex: number;
   discipline: string;
   content: string;
   cost: number | string;

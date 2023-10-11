@@ -4,7 +4,7 @@ import { variants } from "../config/pmcalendar";
 import { VariantProps } from "../types/pmcalendar";
 import { RULProps, DisciplineProps } from "../types/rul";
 
-const RUL = ({ header, content, footer, onAction }: RULProps) => {
+const RUL = ({ header, content, footer, onAction, highlight }: RULProps) => {
   return (
     <div
       className={classnames(
@@ -49,7 +49,7 @@ const RUL = ({ header, content, footer, onAction }: RULProps) => {
               {new Date().getFullYear() + 5}
             </div>
             {content[0].disciplines.length > 0 &&
-              content[0].disciplines.map((c: DisciplineProps) => (
+              content[0].disciplines.map((c: DisciplineProps, i: number) => (
                 <button
                   key={c.content}
                   className={classnames(
@@ -67,11 +67,20 @@ const RUL = ({ header, content, footer, onAction }: RULProps) => {
                     "font-bold",
                     "px-2",
                     "cursor-pointer",
+                    highlight &&
+                      highlight.yearIndex === 0 &&
+                      highlight.disciplineIndex === i
+                      ? "!border-warning"
+                      : "",
                     variants[c.discipline as keyof VariantProps]
                   )}
+                  style={{
+                    border: "3px solid #ffffff00",
+                  }}
                   onClick={() =>
                     onAction({
-                      index: 0,
+                      yearIndex: 0,
+                      disciplineIndex: i,
                       discipline: c.discipline,
                       content: c.content,
                       cost: c.cost,
@@ -99,7 +108,7 @@ const RUL = ({ header, content, footer, onAction }: RULProps) => {
           </div>
           <div className="flex flex-col justify-end h-[95%] p-0.5">
             {content[1].disciplines.length > 0 &&
-              content[1].disciplines.map((c: DisciplineProps) => (
+              content[1].disciplines.map((c: DisciplineProps, i: number) => (
                 <button
                   key={c.content}
                   className={classnames(
@@ -117,11 +126,20 @@ const RUL = ({ header, content, footer, onAction }: RULProps) => {
                     "font-bold",
                     "px-2",
                     "cursor-pointer",
+                    highlight &&
+                      highlight.yearIndex === 1 &&
+                      highlight.disciplineIndex === i
+                      ? "!border-warning"
+                      : "",
                     variants[c.discipline as keyof VariantProps]
                   )}
+                  style={{
+                    border: "3px solid #ffffff00",
+                  }}
                   onClick={() =>
                     onAction({
-                      index: 1,
+                      yearIndex: 1,
+                      disciplineIndex: i,
                       discipline: c.discipline,
                       content: c.content,
                       cost: c.cost,
@@ -150,7 +168,7 @@ const RUL = ({ header, content, footer, onAction }: RULProps) => {
           </div>
           <div className="flex flex-col justify-end h-[95%] p-0.5">
             {content[2].disciplines.length > 0 &&
-              content[2].disciplines.map((c: DisciplineProps) => (
+              content[2].disciplines.map((c: DisciplineProps, i: number) => (
                 <button
                   key={c.content}
                   className={classnames(
@@ -168,11 +186,20 @@ const RUL = ({ header, content, footer, onAction }: RULProps) => {
                     "font-bold",
                     "px-2",
                     "cursor-pointer",
+                    highlight &&
+                      highlight.yearIndex === 2 &&
+                      highlight.disciplineIndex === i
+                      ? "!border-warning"
+                      : "",
                     variants[c.discipline as keyof VariantProps]
                   )}
+                  style={{
+                    border: "3px solid #ffffff00",
+                  }}
                   onClick={() =>
                     onAction({
-                      index: 2,
+                      yearIndex: 2,
+                      disciplineIndex: i,
                       discipline: c.discipline,
                       content: c.content,
                       cost: c.cost,

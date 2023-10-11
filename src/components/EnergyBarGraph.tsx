@@ -1,3 +1,5 @@
+// Author - Varun Bardwaj
+
 import React, { useState } from "react";
 import {
   ContentBarType,

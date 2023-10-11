@@ -6,6 +6,7 @@ import classNames from "classnames";
 import { InputProps } from "../types/input";
 import { variants } from "../config/input";
 import { IconType } from "react-icons";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Input = ({
   variant = "light",
@@ -67,15 +68,20 @@ const Input = ({
           classNames(
             variants[variant],
             rounded ? "rounded-full" : "rounded-lg",
-            "h-full w-full font-normal px-3 not-italic leading-[18px] border-none outline-none pb-[3px]"
+            "h-full w-full font-normal pl-3 not-italic leading-[18px] border-none outline-none pb-[3px]"
           ),
           cxLayout,
           cxInput
         )}
       />
-      {rightIcon && (
-        <div className="h-full flex items-center pr-3 pb-[3px]">
-          <RightIcon />
+      {(rightIcon || value !== "") && (
+        <div
+          className={`h-full flex items-center pl-2 pr-3 pb-[3px] ${
+            value !== "" ? "cursor-pointer" : ""
+          }`}
+          onClick={() => value !== "" && onType({ target: { value: "" } })}
+        >
+          {value !== "" ? <AiOutlineClose /> : rightIcon ? <RightIcon /> : null}
         </div>
       )}
     </div>

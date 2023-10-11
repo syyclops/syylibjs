@@ -1,3 +1,5 @@
+// Author - Manish
+
 import React from "react";
 import { textareaprops } from "../types/textArea";
 import { twMerge } from "tailwind-merge";

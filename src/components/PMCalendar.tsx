@@ -1,9 +1,9 @@
+// Author - Varun Bardwaj
+
 import React from "react";
 import classnames from "classnames";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { variants } from "../config/pmcalendar";
 import {
-  ContentProps,
   DisciplineProps,
   PMCalendarProps,
   VariantProps,
@@ -13,7 +13,6 @@ const PMCalendar = ({
   header,
   index,
   content,
-  onNav,
   onAction,
   footer,
 }: PMCalendarProps) => {
@@ -34,29 +33,7 @@ const PMCalendar = ({
           "font-bold"
         )}
       >
-        {/* <button
-          className={classnames(
-            "border-[#00000000] mr-3 bg-transparent",
-            index === 0 ? "cursor-not-allowed opacity-20" : "cursor-pointer"
-          )}
-          disabled={index === 0}
-          onClick={() => onNav("prev")}
-        >
-          <FiChevronLeft />
-        </button> */}
         <div>{header}</div>
-        {/* <button
-          className={classnames(
-            "border-[#00000000] ml-3 bg-transparent",
-            header.length === 1 || index >= header.length - 1
-              ? "cursor-not-allowed opacity-20"
-              : "cursor-pointer"
-          )}
-          disabled={header.length === 1 || index >= header.length - 1}
-          onClick={() => onNav("next")}
-        >
-          <FiChevronRight />
-        </button> */}
       </div>
       <div
         className={classnames(

@@ -5,11 +5,13 @@ type InputProps = {
   type: "text" | "password" | "email";
   variant?: "primary" | "secondary" | "dark" | "light";
   value: string;
-  onType: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onType: (
+    e: React.ChangeEvent<HTMLInputElement> | { target: { value: string } }
+  ) => void;
   onClick?: () => void;
   onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
-  onFocus?: (e:React.FocusEvent<HTMLInputElement>)=> void;
-  onBlur?: (e:React.FocusEvent<HTMLInputElement>)=>void;
+  onFocus?: (e: React.FocusEvent<HTMLInputElement>) => void;
+  onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
   placeholder?: string;
   leftIcon?: IconType;
   rightIcon?: IconType;

@@ -1,3 +1,5 @@
+// Author - Varun Bardwaj
+
 import React from "react";
 import { CollapseProps } from "../types/collapse";
 import { variants } from "../config";
