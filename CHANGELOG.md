@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.1.0](https://github.com/syyclops/syylibjs/compare/v6.0.0...v6.1.0) (2023-10-11)
+
+
+### Features
+
+* **polish:** rul and input components ([61ec1f2](https://github.com/syyclops/syylibjs/commit/61ec1f2e777b4016b742bb5c518d87eae6eac946))
+
 ## [6.0.0](https://github.com/syyclops/syylibjs/compare/v5.2.2...v6.0.0) (2023-10-03)
 
 
