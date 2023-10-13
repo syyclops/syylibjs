@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.2.0](https://github.com/syyclops/syylibjs/compare/v6.1.0...v6.2.0) (2023-10-13)
+
+
+### Features
+
+* **new-feature:** tabs components ([6a661be](https://github.com/syyclops/syylibjs/commit/6a661be414559247ad91accccb5013f500c42076))
+
 ## [6.1.0](https://github.com/syyclops/syylibjs/compare/v6.0.0...v6.1.0) (2023-10-11)
 
 
