@@ -5,6 +5,7 @@ import { twMerge } from "tailwind-merge";
 import classnames from "classnames";
 import ToolTip from "./ToolTip";
 import { ContentType, ContentProps, ContentTypeArray } from "../types/energy";
+import { EnergyBarProps } from "../types/energy/bar";
 
 const EnergyBarWidget = ({
   header,
@@ -12,13 +13,7 @@ const EnergyBarWidget = ({
   footer,
   onAction,
   cx = "",
-}: {
-  header: JSX.Element | string;
-  content: ContentProps[];
-  footer: JSX.Element | string;
-  onAction: (a: { data: ContentProps; clusterData: ContentType }) => void;
-  cx?: string;
-}) => {
+}: EnergyBarProps) => {
   return (
     <div
       className={twMerge(

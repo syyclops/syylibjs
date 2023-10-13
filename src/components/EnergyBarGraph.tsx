@@ -10,18 +10,14 @@ import {
 import classnames from "classnames";
 import { twMerge } from "tailwind-merge";
 import { AiOutlinePlus } from "react-icons/ai";
+import { EnergyGraphProps } from "../types/energy/graph";
 
 const EnergyBarGraph = ({
   content,
   height = "h-full",
   bg = "bg-dark-neutral-200",
   onAction,
-}: {
-  content: ContentProps[];
-  height?: string;
-  bg?: string;
-  onAction: (a: ContentBarType) => void;
-}) => {
+}: EnergyGraphProps) => {
   const [showTooltip, setShowToolTip] = useState<{
     index: string;
     show: boolean;

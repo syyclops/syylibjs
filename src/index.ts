@@ -34,6 +34,8 @@ export { default as UxFileUpload } from "./components/FileUpload";
 export { default as UxDatePicker } from "./components/DatePicker";
 export { default as UxEnergyBarWidget } from "./components/EnergyBarWidget";
 export { default as UxEnergyBarGraph } from "./components/EnergyBarGraph";
+export { default as UxTabs } from "./components/tabs/Tabs";
+export { default as UxTab } from "./components/tabs/Tab";
 
 //Props
 export { PMActionProps, ContentProps } from "./types/pmcalendar";
