@@ -5,6 +5,7 @@ type PMCalendarProps = {
   onNav: (n: string) => void;
   footer: JSX.Element;
   onAction: (a: PMActionProps) => void;
+  isLoading?: boolean;
 };
 
 type PMActionProps = {

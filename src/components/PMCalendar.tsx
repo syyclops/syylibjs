@@ -15,6 +15,7 @@ const PMCalendar = ({
   content,
   onAction,
   footer,
+  isLoading = false,
 }: PMCalendarProps) => {
   return (
     <div
@@ -52,37 +53,76 @@ const PMCalendar = ({
             borderLeft: "1px solid #45518D",
           }}
         >
-          <div className="flex flex-col justify-end h-[95%] p-0.5">
-            {content[index * 3].disciplines.length > 0 &&
-              content[index * 3].disciplines.map((c: DisciplineProps) => (
-                <button
-                  key={c.content}
-                  className={classnames(
-                    "relative",
-                    "w-full",
-                    "h-1/4",
-                    "mb-0.5",
-                    "rounded-full",
-                    "border-none",
-                    "text-left",
-                    "text-sm",
-                    "font-bold",
-                    "px-2",
-                    "cursor-pointer",
-                    variants[c.discipline as keyof VariantProps]
-                  )}
-                  onClick={() =>
-                    onAction({
-                      month: content[index * 3].month,
-                      discipline: c.discipline,
-                      content: c.content,
-                    })
-                  }
-                >
-                  {c.content}
-                </button>
-              ))}
-          </div>
+          {!isLoading ? (
+            <div className="flex flex-col justify-end h-[95%] p-0.5">
+              {content[index * 3].disciplines.length > 0 &&
+                content[index * 3].disciplines.map((c: DisciplineProps) => (
+                  <button
+                    key={c.content}
+                    className={classnames(
+                      "relative",
+                      "w-full",
+                      "h-1/4",
+                      "mb-0.5",
+                      "rounded-full",
+                      "border-none",
+                      "text-left",
+                      "text-sm",
+                      "font-bold",
+                      "px-2",
+                      "cursor-pointer",
+                      variants[c.discipline as keyof VariantProps]
+                    )}
+                    onClick={() =>
+                      onAction({
+                        month: content[index * 3].month,
+                        discipline: c.discipline,
+                        content: c.content,
+                      })
+                    }
+                  >
+                    {c.content}
+                  </button>
+                ))}
+            </div>
+          ) : (
+            <div className="flex flex-col justify-end h-[95%] p-0.5">
+              <div
+                className={classnames(
+                  "relative",
+                  "w-full",
+                  "h-1/4",
+                  "mb-0.5",
+                  "rounded-full",
+                  "border-none",
+                  "text-left",
+                  "text-sm",
+                  "font-bold",
+                  "px-2",
+                  "cursor-pointer",
+                  "bg-dark-neutral-100",
+                  "animate-pulse"
+                )}
+              />
+              <div
+                className={classnames(
+                  "relative",
+                  "w-full",
+                  "h-1/4",
+                  "mb-0.5",
+                  "rounded-full",
+                  "border-none",
+                  "text-left",
+                  "text-sm",
+                  "font-bold",
+                  "px-2",
+                  "cursor-pointer",
+                  "bg-dark-neutral-100",
+                  "animate-pulse"
+                )}
+              />
+            </div>
+          )}
           <div className="absolute -bottom-7 left-1/2 -translate-x-1/2 text-sm text-light-neutral-300">
             {content[index * 3].month}
           </div>
@@ -101,37 +141,59 @@ const PMCalendar = ({
             {content[index * 3 + 1].month}
           </div>
 
-          <div className="flex flex-col justify-end h-[95%] p-0.5">
-            {content[index * 3 + 1].disciplines.length > 0 &&
-              content[index * 3 + 1].disciplines.map((c: DisciplineProps) => (
-                <button
-                  key={c.content}
-                  className={classnames(
-                    "relative",
-                    "w-full",
-                    "h-1/4",
-                    "mb-0.5",
-                    "rounded-full",
-                    "border-none",
-                    "text-left",
-                    "text-sm",
-                    "font-bold",
-                    "px-2",
-                    "cursor-pointer",
-                    variants[c.discipline as keyof VariantProps]
-                  )}
-                  onClick={() =>
-                    onAction({
-                      month: content[index * 3 + 1].month,
-                      discipline: c.discipline,
-                      content: c.content,
-                    })
-                  }
-                >
-                  {c.content}
-                </button>
-              ))}
-          </div>
+          {!isLoading ? (
+            <div className="flex flex-col justify-end h-[95%] p-0.5">
+              {content[index * 3 + 1].disciplines.length > 0 &&
+                content[index * 3 + 1].disciplines.map((c: DisciplineProps) => (
+                  <button
+                    key={c.content}
+                    className={classnames(
+                      "relative",
+                      "w-full",
+                      "h-1/4",
+                      "mb-0.5",
+                      "rounded-full",
+                      "border-none",
+                      "text-left",
+                      "text-sm",
+                      "font-bold",
+                      "px-2",
+                      "cursor-pointer",
+                      variants[c.discipline as keyof VariantProps]
+                    )}
+                    onClick={() =>
+                      onAction({
+                        month: content[index * 3 + 1].month,
+                        discipline: c.discipline,
+                        content: c.content,
+                      })
+                    }
+                  >
+                    {c.content}
+                  </button>
+                ))}
+            </div>
+          ) : (
+            <div className="flex flex-col justify-end h-[95%] p-0.5">
+              <div
+                className={classnames(
+                  "relative",
+                  "w-full",
+                  "h-1/4",
+                  "mb-0.5",
+                  "rounded-full",
+                  "border-none",
+                  "text-left",
+                  "text-sm",
+                  "font-bold",
+                  "px-2",
+                  "cursor-pointer",
+                  "bg-dark-neutral-100",
+                  "animate-pulse"
+                )}
+              />
+            </div>
+          )}
           <div className="absolute bottom-0 -left-1 w-2 h-2 bg-mid-neutral-200 rounded-full" />
         </div>
         <div
@@ -148,37 +210,93 @@ const PMCalendar = ({
             {content[index * 3 + 2].month}
           </div>
 
-          <div className="flex flex-col justify-end h-[95%] p-0.5">
-            {content[index * 3 + 2].disciplines.length > 0 &&
-              content[index * 3 + 2].disciplines.map((c: DisciplineProps) => (
-                <button
-                  key={c.content}
-                  className={classnames(
-                    "relative",
-                    "w-full",
-                    "h-1/4",
-                    "mb-0.5",
-                    "rounded-full",
-                    "border-none",
-                    "text-left",
-                    "text-sm",
-                    "font-bold",
-                    "px-2",
-                    "cursor-pointer",
-                    variants[c.discipline as keyof VariantProps]
-                  )}
-                  onClick={() =>
-                    onAction({
-                      month: content[index * 3 + 2].month,
-                      discipline: c.discipline,
-                      content: c.content,
-                    })
-                  }
-                >
-                  {c.content}
-                </button>
-              ))}
-          </div>
+          {!isLoading ? (
+            <div className="flex flex-col justify-end h-[95%] p-0.5">
+              {content[index * 3 + 2].disciplines.length > 0 &&
+                content[index * 3 + 2].disciplines.map((c: DisciplineProps) => (
+                  <button
+                    key={c.content}
+                    className={classnames(
+                      "relative",
+                      "w-full",
+                      "h-1/4",
+                      "mb-0.5",
+                      "rounded-full",
+                      "border-none",
+                      "text-left",
+                      "text-sm",
+                      "font-bold",
+                      "px-2",
+                      "cursor-pointer",
+                      variants[c.discipline as keyof VariantProps]
+                    )}
+                    onClick={() =>
+                      onAction({
+                        month: content[index * 3 + 2].month,
+                        discipline: c.discipline,
+                        content: c.content,
+                      })
+                    }
+                  >
+                    {c.content}
+                  </button>
+                ))}
+            </div>
+          ) : (
+            <div className="flex flex-col justify-end h-[95%] p-0.5">
+              <div
+                className={classnames(
+                  "relative",
+                  "w-full",
+                  "h-1/4",
+                  "mb-0.5",
+                  "rounded-full",
+                  "border-none",
+                  "text-left",
+                  "text-sm",
+                  "font-bold",
+                  "px-2",
+                  "cursor-pointer",
+                  "bg-dark-neutral-100",
+                  "animate-pulse"
+                )}
+              />
+              <div
+                className={classnames(
+                  "relative",
+                  "w-full",
+                  "h-1/4",
+                  "mb-0.5",
+                  "rounded-full",
+                  "border-none",
+                  "text-left",
+                  "text-sm",
+                  "font-bold",
+                  "px-2",
+                  "cursor-pointer",
+                  "bg-dark-neutral-100",
+                  "animate-pulse"
+                )}
+              />
+              <div
+                className={classnames(
+                  "relative",
+                  "w-full",
+                  "h-1/4",
+                  "mb-0.5",
+                  "rounded-full",
+                  "border-none",
+                  "text-left",
+                  "text-sm",
+                  "font-bold",
+                  "px-2",
+                  "cursor-pointer",
+                  "bg-dark-neutral-100",
+                  "animate-pulse"
+                )}
+              />
+            </div>
+          )}
           <div className="absolute bottom-0 -left-1 w-2 h-2 bg-mid-neutral-200 rounded-full" />
           <div className="absolute bottom-0 -right-1 w-2 h-2 bg-mid-neutral-200 rounded-full" />
         </div>
