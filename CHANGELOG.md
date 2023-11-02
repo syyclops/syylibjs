@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.0.0](https://github.com/syyclops/syylibjs/compare/v6.2.1...v7.0.0) (2023-11-02)
+
+
+### Features
+
+* **new-feature:** schedule component ([9461fcb](https://github.com/syyclops/syylibjs/commit/9461fcb101cb74926c377a2825bda5e6a6fd3c5d))
+
 ### [6.2.1](https://github.com/syyclops/syylibjs/compare/v6.2.0...v6.2.1) (2023-10-30)
 
 
