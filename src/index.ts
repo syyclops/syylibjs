@@ -1,4 +1,5 @@
 // Components
+
 export { default as UxParagraph } from "./components/Paragraph";
 export { default as UxTitle } from "./components/Title";
 export { default as UxToast } from "./components/Toast";
@@ -36,6 +37,8 @@ export { default as UxEnergyBarWidget } from "./components/EnergyBarWidget";
 export { default as UxEnergyBarGraph } from "./components/EnergyBarGraph";
 export { default as UxTabs } from "./components/tabs/Tabs";
 export { default as UxTab } from "./components/tabs/Tab";
+export { default as UxScheduleCalendar } from "./components/ScheduleCalendar";
 
 //Props
+
 export { PMActionProps, ContentProps } from "./types/pmcalendar";

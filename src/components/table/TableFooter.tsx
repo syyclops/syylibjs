@@ -1,3 +1,5 @@
+// Author - Varun Bardwaj
+
 import React from "react";
 import { TFooterProps } from "../../types/table/tfooter";
 import classnames from "classnames";

@@ -1,3 +1,5 @@
+// Author - Varun Bardwaj
+
 import React from "react";
 import { TRowProps } from "../../types/table/trow";
 import classnames from "classnames";

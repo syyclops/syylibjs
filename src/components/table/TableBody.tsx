@@ -1,3 +1,5 @@
+// Author - Varun Bardwaj
+
 import React from "react";
 import { TBodyProps } from "../../types/table/tbody";
 import classnames from "classnames";

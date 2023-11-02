@@ -1,3 +1,5 @@
+// Author - Varun Bardwaj
+
 import classnames from "classnames";
 import React from "react";
 import { THeaderProps } from "../../types/table/theader";

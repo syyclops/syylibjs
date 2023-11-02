@@ -1,3 +1,5 @@
+// Author - Varun Bardwaj
+
 import classnames from "classnames";
 import React from "react";
 import { THeadProps } from "../../types/table/thead";
