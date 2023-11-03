@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.1.0](https://github.com/syyclops/syylibjs/compare/v7.0.0...v7.1.0) (2023-11-03)
+
+
+### Features
+
+* **polish:** piechart props ([963780c](https://github.com/syyclops/syylibjs/commit/963780c6d5137fb9fda1eb6d777776a268f8562e))
+
 ## [7.0.0](https://github.com/syyclops/syylibjs/compare/v6.2.1...v7.0.0) (2023-11-02)
 
 
