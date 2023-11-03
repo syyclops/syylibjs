@@ -13,7 +13,11 @@ type CircleProps = {
     | "success"
     | "error"
     | "warning"
-    | "info";
+    | "info"
+    | "arch"
+    | "elec"
+    | "mech"
+    | "plumb";
 };
 
 type PieChartProps = {

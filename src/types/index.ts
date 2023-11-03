@@ -16,6 +16,10 @@ type VariantsProps = {
   success?: string;
   warning?: string;
   info?: string;
+  arch?: string;
+  elec?: string;
+  mech?: string;
+  plumb?: string;
 };
 
 type SizeProps = {

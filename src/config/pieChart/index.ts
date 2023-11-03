@@ -14,6 +14,10 @@ const pieStroke: VariantsProps = {
   error: "stroke-error",
   warning: "stroke-warning",
   info: "stroke-info",
+  arch: "stroke-arch",
+  elec: "stroke-elec",
+  mech: "stroke-mech",
+  plumb: "stroke-plumb",
 };
 
 export { pieStroke };
