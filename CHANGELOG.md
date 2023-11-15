@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [7.1.1](https://github.com/syyclops/syylibjs/compare/v7.1.0...v7.1.1) (2023-11-15)
+
+
+### Features
+
+* **polish:** rul calendar ([b7c80a3](https://github.com/syyclops/syylibjs/commit/b7c80a3df29a36a56c74590bc2aaf9e7772c1c59))
+
 ## [7.1.0](https://github.com/syyclops/syylibjs/compare/v7.0.0...v7.1.0) (2023-11-03)
 
 
