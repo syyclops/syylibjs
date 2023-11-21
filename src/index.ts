@@ -38,6 +38,7 @@ export { default as UxEnergyBarGraph } from "./components/EnergyBarGraph";
 export { default as UxTabs } from "./components/tabs/Tabs";
 export { default as UxTab } from "./components/tabs/Tab";
 export { default as UxScheduleCalendar } from "./components/ScheduleCalendar";
+export { default as UxTextEditor } from "./components/textEditor";
 
 //Props
 
