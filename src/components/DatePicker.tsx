@@ -118,15 +118,19 @@ const DatePicker = ({
   const [dateList, setDateList] = React.useState<(string | number)[]>([]);
 
   useEffect(() => {
-    renderDates(
-      month,
-      date,
-      year,
-      previousMonth,
-      previousYear,
-      nextMonth,
-      nextYear
-    );
+    const d = parseInt(value.d);
+    const m = parseInt(value.m);
+    const y = parseInt(value.y);
+    const pm = m === 0 ? 12 : m;
+    const py = m === 0 ? y - 1 : y;
+    const nm = m === 11 ? 1 : m + 2;
+    const ny = m === 11 ? y + 1 : y;
+
+    setTextYear(y.toString());
+    setTextMonth(zeroPad((m + 1).toString()));
+    setTextDate(zeroPad(d.toString()));
+
+    renderDates(m, d, y, pm, py, nm, ny);
   }, [value]);
 
   const ref = React.useRef<HTMLDivElement | null>(null);
