@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [8.0.1](https://github.com/syyclops/syylibjs/compare/v8.0.0...v8.0.1) (2023-11-27)
+
+
+### Features
+
+* **polish:** date picker ([7e04ff2](https://github.com/syyclops/syylibjs/commit/7e04ff2f496481e8f1b2e89aacd764ff6b778aa1))
+
 ## [8.0.0](https://github.com/syyclops/syylibjs/compare/v7.1.1...v8.0.0) (2023-11-21)
 
 
