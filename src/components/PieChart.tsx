@@ -27,18 +27,18 @@ const RenderProgress = ({
         transition: "stroke-dashoffset 1s",
       }}
       className={twMerge(classnames(pieStroke[circle.variant]))}
-      cx={`${x}rem`}
-      cy={`${x}rem`}
-      r={`${rad}rem`}
-      strokeWidth={`${stroke}rem`}
+      cx={`${x}`}
+      cy={`${x}`}
+      r={`${rad}`}
+      strokeWidth={`${stroke}`}
       strokeLinecap={"round"}
-      strokeDasharray={`${circumference}rem`}
-      strokeDashoffset={`${offset}rem`}
+      strokeDasharray={`${circumference}`}
+      strokeDashoffset={`${offset}`}
     ></circle>
   );
 };
 
-const PieChart = ({ circleSize = 3, circles = [] }: PieChartProps) => {
+const PieChart = ({ circleSize = 100, circles = [] }: PieChartProps) => {
   const size = circleSize;
   const stroke = (size * 12) / 100;
 
@@ -46,15 +46,15 @@ const PieChart = ({ circleSize = 3, circles = [] }: PieChartProps) => {
     <div
       className="relative flex justify-center items-center"
       style={{
-        width: `${size}rem`,
-        height: `${size}rem`,
+        width: `${size}`,
+        height: `${size}`,
       }}
     >
       <svg
         className="rotate-[-90deg]"
         style={{
-          width: `${size}rem`,
-          height: `${size}rem`,
+          width: `${size}`,
+          height: `${size}`,
         }}
       >
         {circles.map((circle: CircleProps, i: number) => (

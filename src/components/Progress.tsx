@@ -46,7 +46,7 @@ const renderBar = ({
 };
 
 const renderCircle = ({
-  circleSize = 3,
+  circleSize = 100,
   percent = 0,
   variant = "primary",
   completedStroke = "",
@@ -65,15 +65,15 @@ const renderCircle = ({
     <div
       className="flex justify-center items-center"
       style={{
-        width: `${size}rem`,
-        height: `${size}rem`,
+        width: `${size}`,
+        height: `${size}`,
       }}
     >
       <svg
         className="rotate-[-90deg]"
         style={{
-          width: `${size}rem`,
-          height: `${size}rem`,
+          width: `${size}`,
+          height: `${size}`,
         }}
       >
         <circle
@@ -82,10 +82,10 @@ const renderCircle = ({
             fill: "transparent",
             transition: "stroke-dashoffset 1s",
           }}
-          cx={`${x}rem`}
-          cy={`${x}rem`}
-          r={`${rad}rem`}
-          strokeWidth={`${stroke}rem`}
+          cx={`${x}`}
+          cy={`${x}`}
+          r={`${rad}`}
+          strokeWidth={`${stroke}`}
         ></circle>
         <circle
           style={{
@@ -96,20 +96,20 @@ const renderCircle = ({
             classnames(circleStroke[variant]),
             completedStroke
           )}
-          cx={`${x}rem`}
-          cy={`${x}rem`}
-          r={`${rad}rem`}
-          strokeWidth={`${stroke}rem`}
+          cx={`${x}`}
+          cy={`${x}`}
+          r={`${rad}`}
+          strokeWidth={`${stroke}`}
           strokeLinecap={"round"}
-          strokeDasharray={`${circumference}rem`}
-          strokeDashoffset={`${offset}rem`}
+          strokeDasharray={`${circumference}`}
+          strokeDashoffset={`${offset}`}
         ></circle>
       </svg>
       {showPercent && (
         <div
           className="absolute font-semibold"
           style={{
-            fontSize: `${(size as number) / 5.2}rem`,
+            fontSize: `${(size as number) / 5.2}`,
             color: fg ? fg : "white",
           }}
         >
