@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.1.0](https://github.com/syyclops/syylibjs/compare/v8.0.2...v8.1.0) (2023-12-08)
+
+
+### Features
+
+* **polish:** rul calendar props ([01b38ca](https://github.com/syyclops/syylibjs/commit/01b38ca37f3515e90915493d5bddb564d9164593))
+
 ### [8.0.2](https://github.com/syyclops/syylibjs/compare/v8.0.1...v8.0.2) (2023-12-05)
 
 
