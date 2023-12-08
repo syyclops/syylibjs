@@ -4,6 +4,7 @@ type RULProps = {
   footer: JSX.Element | string;
   onAction: (a: RULActionProps) => void;
   highlight?: { yearIndex: number; disciplineIndex: number };
+  isLoading?: boolean;
 };
 
 type RULActionProps = {

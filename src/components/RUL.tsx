@@ -6,7 +6,14 @@ import { variants } from "../config/pmcalendar";
 import { VariantProps } from "../types/pmcalendar";
 import { RULProps, DisciplineProps } from "../types/rul";
 
-const RUL = ({ header, content, footer, onAction, highlight }: RULProps) => {
+const RUL = ({
+  header,
+  content,
+  footer,
+  onAction,
+  highlight,
+  isLoading = false,
+}: RULProps) => {
   return (
     <div
       className={classnames(
@@ -50,7 +57,8 @@ const RUL = ({ header, content, footer, onAction, highlight }: RULProps) => {
             <div className="absolute text-light-neutral-300 right-0 translate-x-[50%] -bottom-6 text-xs font-normal">
               {new Date().getFullYear() + 5}
             </div>
-            {content[0].disciplines.length > 0 &&
+            {!isLoading ? (
+              content[0].disciplines.length > 0 &&
               content[0].disciplines.map((c: DisciplineProps, i: number) => (
                 <button
                   key={c.content}
@@ -92,7 +100,28 @@ const RUL = ({ header, content, footer, onAction, highlight }: RULProps) => {
                   <div>{c.content}</div>
                   <div>${c.cost}</div>
                 </button>
-              ))}
+              ))
+            ) : (
+              <div className="flex flex-col justify-end h-[95%] p-0.5">
+                <div
+                  className={classnames(
+                    "relative",
+                    "w-full",
+                    "h-1/4",
+                    "mb-0.5",
+                    "rounded-full",
+                    "border-none",
+                    "text-left",
+                    "text-sm",
+                    "font-bold",
+                    "px-2",
+                    "cursor-pointer",
+                    "bg-dark-neutral-100",
+                    "animate-pulse"
+                  )}
+                />
+              </div>
+            )}
           </div>
           <div className="absolute bottom-0 -left-1 w-2 h-2 bg-mid-neutral-200 rounded-full" />
         </div>
@@ -109,7 +138,8 @@ const RUL = ({ header, content, footer, onAction, highlight }: RULProps) => {
             {new Date().getFullYear() + 10}
           </div>
           <div className="flex flex-col justify-end h-[95%] p-0.5">
-            {content[1].disciplines.length > 0 &&
+            {!isLoading ? (
+              content[1].disciplines.length > 0 &&
               content[1].disciplines.map((c: DisciplineProps, i: number) => (
                 <button
                   key={c.content}
@@ -151,7 +181,62 @@ const RUL = ({ header, content, footer, onAction, highlight }: RULProps) => {
                   <div>{c.content}</div>
                   <div>${c.cost}</div>
                 </button>
-              ))}
+              ))
+            ) : (
+              <div className="flex flex-col justify-end h-[95%] p-0.5">
+                <div
+                  className={classnames(
+                    "relative",
+                    "w-full",
+                    "h-1/4",
+                    "mb-0.5",
+                    "rounded-full",
+                    "border-none",
+                    "text-left",
+                    "text-sm",
+                    "font-bold",
+                    "px-2",
+                    "cursor-pointer",
+                    "bg-dark-neutral-100",
+                    "animate-pulse"
+                  )}
+                />
+                <div
+                  className={classnames(
+                    "relative",
+                    "w-full",
+                    "h-1/4",
+                    "mb-0.5",
+                    "rounded-full",
+                    "border-none",
+                    "text-left",
+                    "text-sm",
+                    "font-bold",
+                    "px-2",
+                    "cursor-pointer",
+                    "bg-dark-neutral-100",
+                    "animate-pulse"
+                  )}
+                />
+                <div
+                  className={classnames(
+                    "relative",
+                    "w-full",
+                    "h-1/4",
+                    "mb-0.5",
+                    "rounded-full",
+                    "border-none",
+                    "text-left",
+                    "text-sm",
+                    "font-bold",
+                    "px-2",
+                    "cursor-pointer",
+                    "bg-dark-neutral-100",
+                    "animate-pulse"
+                  )}
+                />
+              </div>
+            )}
           </div>
           <div className="absolute bottom-0 -left-1 w-2 h-2 bg-mid-neutral-200 rounded-full" />
         </div>
@@ -169,7 +254,8 @@ const RUL = ({ header, content, footer, onAction, highlight }: RULProps) => {
             {new Date().getFullYear() + 15}
           </div>
           <div className="flex flex-col justify-end h-[95%] p-0.5">
-            {content[2].disciplines.length > 0 &&
+            {!isLoading ? (
+              content[2].disciplines.length > 0 &&
               content[2].disciplines.map((c: DisciplineProps, i: number) => (
                 <button
                   key={c.content}
@@ -211,7 +297,45 @@ const RUL = ({ header, content, footer, onAction, highlight }: RULProps) => {
                   <div>{c.content}</div>
                   <div>${c.cost}</div>
                 </button>
-              ))}
+              ))
+            ) : (
+              <div className="flex flex-col justify-end h-[95%] p-0.5">
+                <div
+                  className={classnames(
+                    "relative",
+                    "w-full",
+                    "h-1/4",
+                    "mb-0.5",
+                    "rounded-full",
+                    "border-none",
+                    "text-left",
+                    "text-sm",
+                    "font-bold",
+                    "px-2",
+                    "cursor-pointer",
+                    "bg-dark-neutral-100",
+                    "animate-pulse"
+                  )}
+                />
+                <div
+                  className={classnames(
+                    "relative",
+                    "w-full",
+                    "h-1/4",
+                    "mb-0.5",
+                    "rounded-full",
+                    "border-none",
+                    "text-left",
+                    "text-sm",
+                    "font-bold",
+                    "px-2",
+                    "cursor-pointer",
+                    "bg-dark-neutral-100",
+                    "animate-pulse"
+                  )}
+                />
+              </div>
+            )}
           </div>
           <div className="absolute bottom-0 -left-1 w-2 h-2 bg-mid-neutral-200 rounded-full" />
           <div className="absolute bottom-0 -right-1 w-2 h-2 bg-mid-neutral-200 rounded-full" />
