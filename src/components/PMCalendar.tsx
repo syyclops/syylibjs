@@ -15,6 +15,7 @@ const PMCalendar = ({
   content,
   onAction,
   footer,
+  highlight,
   isLoading = false,
 }: PMCalendarProps) => {
   return (
@@ -56,34 +57,46 @@ const PMCalendar = ({
           {!isLoading ? (
             <div className="flex flex-col justify-end h-[95%] p-0.5">
               {content[index * 3].disciplines.length > 0 &&
-                content[index * 3].disciplines.map((c: DisciplineProps) => (
-                  <button
-                    key={c.content}
-                    className={classnames(
-                      "relative",
-                      "w-full",
-                      "h-1/4",
-                      "mb-0.5",
-                      "rounded-full",
-                      "border-none",
-                      "text-left",
-                      "text-sm",
-                      "font-bold",
-                      "px-2",
-                      "cursor-pointer",
-                      variants[c.discipline as keyof VariantProps]
-                    )}
-                    onClick={() =>
-                      onAction({
-                        month: content[index * 3].month,
-                        discipline: c.discipline,
-                        content: c.content,
-                      })
-                    }
-                  >
-                    {c.content}
-                  </button>
-                ))}
+                content[index * 3].disciplines.map(
+                  (c: DisciplineProps, i: number) => {
+                    return (
+                      <button
+                        key={c.content}
+                        className={classnames(
+                          "relative",
+                          "w-full",
+                          "h-1/4",
+                          "mb-0.5",
+                          "rounded-full",
+                          "border-none",
+                          "text-left",
+                          "text-sm",
+                          "font-bold",
+                          "px-2",
+                          "cursor-pointer",
+                          variants[c.discipline as keyof VariantProps],
+                          highlight &&
+                            highlight.monthIndex === 0 &&
+                            highlight.disciplineIndex === i
+                            ? "!border-warning"
+                            : ""
+                        )}
+                        style={{
+                          border: "3px solid #ffffff00",
+                        }}
+                        onClick={() =>
+                          onAction({
+                            month: content[index * 3].month,
+                            discipline: c.discipline,
+                            content: c.content,
+                          })
+                        }
+                      >
+                        {c.content}
+                      </button>
+                    );
+                  }
+                )}
             </div>
           ) : (
             <div className="flex flex-col justify-end h-[95%] p-0.5">
@@ -144,34 +157,44 @@ const PMCalendar = ({
           {!isLoading ? (
             <div className="flex flex-col justify-end h-[95%] p-0.5">
               {content[index * 3 + 1].disciplines.length > 0 &&
-                content[index * 3 + 1].disciplines.map((c: DisciplineProps) => (
-                  <button
-                    key={c.content}
-                    className={classnames(
-                      "relative",
-                      "w-full",
-                      "h-1/4",
-                      "mb-0.5",
-                      "rounded-full",
-                      "border-none",
-                      "text-left",
-                      "text-sm",
-                      "font-bold",
-                      "px-2",
-                      "cursor-pointer",
-                      variants[c.discipline as keyof VariantProps]
-                    )}
-                    onClick={() =>
-                      onAction({
-                        month: content[index * 3 + 1].month,
-                        discipline: c.discipline,
-                        content: c.content,
-                      })
-                    }
-                  >
-                    {c.content}
-                  </button>
-                ))}
+                content[index * 3 + 1].disciplines.map(
+                  (c: DisciplineProps, i: number) => (
+                    <button
+                      key={c.content}
+                      className={classnames(
+                        "relative",
+                        "w-full",
+                        "h-1/4",
+                        "mb-0.5",
+                        "rounded-full",
+                        "border-none",
+                        "text-left",
+                        "text-sm",
+                        "font-bold",
+                        "px-2",
+                        "cursor-pointer",
+                        variants[c.discipline as keyof VariantProps],
+                        highlight &&
+                          highlight.monthIndex === 1 &&
+                          highlight.disciplineIndex === i
+                          ? "!border-warning"
+                          : ""
+                      )}
+                      style={{
+                        border: "3px solid #ffffff00",
+                      }}
+                      onClick={() =>
+                        onAction({
+                          month: content[index * 3 + 1].month,
+                          discipline: c.discipline,
+                          content: c.content,
+                        })
+                      }
+                    >
+                      {c.content}
+                    </button>
+                  )
+                )}
             </div>
           ) : (
             <div className="flex flex-col justify-end h-[95%] p-0.5">
@@ -213,34 +236,44 @@ const PMCalendar = ({
           {!isLoading ? (
             <div className="flex flex-col justify-end h-[95%] p-0.5">
               {content[index * 3 + 2].disciplines.length > 0 &&
-                content[index * 3 + 2].disciplines.map((c: DisciplineProps) => (
-                  <button
-                    key={c.content}
-                    className={classnames(
-                      "relative",
-                      "w-full",
-                      "h-1/4",
-                      "mb-0.5",
-                      "rounded-full",
-                      "border-none",
-                      "text-left",
-                      "text-sm",
-                      "font-bold",
-                      "px-2",
-                      "cursor-pointer",
-                      variants[c.discipline as keyof VariantProps]
-                    )}
-                    onClick={() =>
-                      onAction({
-                        month: content[index * 3 + 2].month,
-                        discipline: c.discipline,
-                        content: c.content,
-                      })
-                    }
-                  >
-                    {c.content}
-                  </button>
-                ))}
+                content[index * 3 + 2].disciplines.map(
+                  (c: DisciplineProps, i: number) => (
+                    <button
+                      key={c.content}
+                      className={classnames(
+                        "relative",
+                        "w-full",
+                        "h-1/4",
+                        "mb-0.5",
+                        "rounded-full",
+                        "border-none",
+                        "text-left",
+                        "text-sm",
+                        "font-bold",
+                        "px-2",
+                        "cursor-pointer",
+                        variants[c.discipline as keyof VariantProps],
+                        highlight &&
+                          highlight.monthIndex === 2 &&
+                          highlight.disciplineIndex === i
+                          ? "!border-warning"
+                          : ""
+                      )}
+                      style={{
+                        border: "3px solid #ffffff00",
+                      }}
+                      onClick={() =>
+                        onAction({
+                          month: content[index * 3 + 2].month,
+                          discipline: c.discipline,
+                          content: c.content,
+                        })
+                      }
+                    >
+                      {c.content}
+                    </button>
+                  )
+                )}
             </div>
           ) : (
             <div className="flex flex-col justify-end h-[95%] p-0.5">
