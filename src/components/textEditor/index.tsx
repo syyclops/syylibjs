@@ -93,8 +93,10 @@ const Image = (props: any) => {
 const RichTextEditor = (
   {
     initialState,
+    size = "text-md",
   }: {
     initialState?: RawDraftContentState;
+    size?: string;
   },
   ref: any
 ) => {
@@ -184,18 +186,18 @@ const RichTextEditor = (
 
   return (
     <div className="w-full h-full">
-      <div className="flex items-center gap-4 my-3 text-xl">
+      <div className="flex flex-wrap items-center gap-4 my-3">
         <LuUndo2
           onClick={() => onUndo(setState)}
           className={`cursor-pointer ${getHighlightColor(
             state.getUndoStack().size === 0
-          )}`}
+          )} ${size}`}
         />
         <LuRedo2
           onClick={() => onRedo(setState)}
           className={`cursor-pointer ${getHighlightColor(
             state.getRedoStack().size === 0
-          )}`}
+          )} ${size}`}
         />
         <div className="w-[0.05rem] h-8 bg-mid-neutral-300" />
         <Select
@@ -209,7 +211,7 @@ const RichTextEditor = (
             setOpenTypo(false);
           }}
           width="w-[10rem]"
-          cxLayout="text-mid-neutral-100"
+          cxLayout={`text-mid-neutral-100 ${size}`}
         >
           <SelectOption
             name="Normal text"
@@ -280,13 +282,13 @@ const RichTextEditor = (
           onClick={() => onBoldClick(state, setState)}
           className={`cursor-pointer ${getHighlightColor(
             !hasInlineType(state, "BOLD")
-          )}`}
+          )} ${size}`}
         />
         <GoItalic
           onClick={() => onItalicClick(state, setState)}
           className={`cursor-pointer ${getHighlightColor(
             !hasInlineType(state, "ITALIC")
-          )}`}
+          )} ${size}`}
         />
         <div className="w-[0.05rem] h-8 bg-mid-neutral-300" />
         <Popover
@@ -313,7 +315,7 @@ const RichTextEditor = (
             className="flex flex-col justify-center items-center cursor-pointer"
             onClick={() => setOpenColor(!openColor)}
           >
-            <div className="text-[1.1rem] text-mid-neutral-100">A</div>
+            <div className={`${size} text-mid-neutral-100`}>A</div>
             <div
               className="w-full h-[0.2rem] -mt-1"
               style={{
@@ -327,32 +329,32 @@ const RichTextEditor = (
           onClick={() => onULClick(state, setState)}
           className={`cursor-pointer ${getHighlightColor(
             getBlockType(state) !== "unordered-list-item"
-          )} text-2xl`}
+          )} ${size}`}
         />
         <BsListOl
           onClick={() => onOLClick(state, setState)}
           className={`cursor-pointer ${getHighlightColor(
             getBlockType(state) !== "ordered-list-item"
-          )} mt-[0.1rem]`}
+          )} mt-[0.1rem]  ${size}`}
         />
         <div className="w-[0.05rem] h-8 bg-mid-neutral-300" />
         <AiOutlineAlignLeft
           onClick={() => onAlignLeftClick(state, setState)}
           className={`cursor-pointer ${getHighlightColor(
             !hasInlineType(state, "text-left")
-          )} mt-[0.1rem]`}
+          )} mt-[0.1rem]  ${size}`}
         />
         <AiOutlineAlignCenter
           onClick={() => onAlignCenterClick(state, setState)}
           className={`cursor-pointer ${getHighlightColor(
             !hasInlineType(state, "text-center")
-          )} mt-[0.1rem]`}
+          )} mt-[0.1rem]  ${size}`}
         />
         <AiOutlineAlignRight
           onClick={() => onAlignRightClick(state, setState)}
           className={`cursor-pointer ${getHighlightColor(
             !hasInlineType(state, "text-right")
-          )} mt-[0.1rem]`}
+          )} mt-[0.1rem]  ${size}`}
         />
         <div className="w-[0.05rem] h-8 bg-mid-neutral-300" />
         <Popover
@@ -405,7 +407,7 @@ const RichTextEditor = (
           onClick={() => fileInputRef.current!.click()}
           className={`cursor-pointer ${getHighlightColor(
             !isSelectionImage(state)
-          )} mt-[0.1rem]`}
+          )} mt-[0.1rem]  ${size}`}
         />
         <input
           className="hidden"
