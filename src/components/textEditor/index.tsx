@@ -137,6 +137,11 @@ const RichTextEditor = (
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
+    const is = convertFromRaw(initialState);
+    setState(EditorState.createWithContent(is, decorator));
+  }, [initialState]);
+
+  useEffect(() => {
     setURL(getLinkURL(state));
     console.clear();
   }, [state]);
