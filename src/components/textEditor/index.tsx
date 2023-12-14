@@ -137,8 +137,9 @@ const RichTextEditor = (
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const is = convertFromRaw(initialState);
+    const is = convertFromRaw(initialState!);
     setState(EditorState.createWithContent(is, decorator));
+    console.log("HAI", initialState);
   }, [initialState]);
 
   useEffect(() => {
