@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [8.3.7](https://github.com/syyclops/syylibjs/compare/v8.3.6...v8.3.7) (2023-12-14)
+
+
+### Features
+
+* **polish:** text editor ([5b5f619](https://github.com/syyclops/syylibjs/commit/5b5f619dc11bc79c1e186f98dba6cba5c63a0ca5))
+
 ### [8.3.6](https://github.com/syyclops/syylibjs/compare/v8.3.5...v8.3.6) (2023-12-14)
 
 
