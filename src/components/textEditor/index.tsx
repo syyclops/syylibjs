@@ -104,6 +104,10 @@ const RichTextEditor = (
     onSave: () => {
       return convertToRaw(state.getCurrentContent());
     },
+    onDiscard: (s: RawDraftContentState) => {
+      const is = convertFromRaw(s);
+      setState(EditorState.createWithContent(is, decorator));
+    },
   }));
 
   const decorator = new CompositeDecorator([
