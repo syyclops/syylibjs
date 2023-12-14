@@ -310,6 +310,7 @@ const RichTextEditor = (
           open={openColor}
           onClickAway={() => setOpenColor(false)}
           variant="darker"
+          cx="z-[99999]"
         >
           <div
             className="flex flex-col justify-center items-center cursor-pointer"
