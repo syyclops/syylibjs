@@ -139,12 +139,11 @@ const RichTextEditor = (
   useEffect(() => {
     const is = convertFromRaw(initialState!);
     setState(EditorState.createWithContent(is, decorator));
-    console.log("HAI", initialState);
   }, [initialState]);
 
   useEffect(() => {
     setURL(getLinkURL(state));
-    // console.clear();
+    console.clear();
   }, [state]);
 
   const onAddLinkClick = () => {
