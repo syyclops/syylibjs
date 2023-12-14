@@ -144,7 +144,7 @@ const RichTextEditor = (
 
   useEffect(() => {
     setURL(getLinkURL(state));
-    console.clear();
+    // console.clear();
   }, [state]);
 
   const onAddLinkClick = () => {
