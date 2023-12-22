@@ -34,6 +34,7 @@ const Bubble = ({
       )}
       onClick={onAction && onAction}
       title={tooltip ? text : undefined}
+      data-testid="bubble"
     >
       {text}
     </div>
