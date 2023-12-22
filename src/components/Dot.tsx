@@ -14,6 +14,7 @@ const Dot = ({ size = "sm", variant = "primary", cx }: DotProps) => {
         classnames(sizes[size], variants[variant], "rounded-full"),
         cx
       )}
+      data-testid="dot"
     />
   );
 };
