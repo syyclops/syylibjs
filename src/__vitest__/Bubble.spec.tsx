@@ -174,13 +174,13 @@ describe("test Bubble.tsx component", () => {
         size="md"
         tooltip={true}
         animate={true}
-        bg="bg-[#000000]"
+        fg="text-[#000000]"
       />
     );
     expect(
       renderBubbleComponent
         .getByTestId("bubble")
-        .classList.contains("bg-[#000000]")
+        .classList.contains("text-[#000000]")
     ).toBeTruthy();
   });
 });

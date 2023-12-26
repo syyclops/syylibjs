@@ -7,12 +7,12 @@ import { sizes, variants } from "../config/badge";
 import { BadgeProps } from "../types/badge";
 
 const Badge = ({
-  text,
+  size = "sm",
   variant = "primary",
+  text,
   bg = "",
   fg = "",
   rounded,
-  size = "sm",
 }: BadgeProps) => {
   return (
     <div
@@ -20,12 +20,13 @@ const Badge = ({
         classNames(
           variants[variant],
           rounded ? "rounded-full" : "rounded-sm",
-          size ? sizes[size] : "text-xs",
+          sizes[size],
           "py-1 px-2 text-center font-semibold w-fit"
         ),
         bg,
         fg
       )}
+      data-testid="badge"
     >
       {text}
     </div>
