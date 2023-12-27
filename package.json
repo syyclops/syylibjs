@@ -10,7 +10,7 @@
     "start": "rollup -c -w",
     "release": "standard-version",
     "test:cli": "vitest",
-    "test:ui": "vitest --ui",
+    "test:ui": "vitest --ui --coverage.enabled=true",
     "test:coverage": "vitest run --coverage"
   },
   "repository": {

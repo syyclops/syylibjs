@@ -31,9 +31,10 @@ const Checkbox = ({
         cx
       )}
       onClick={onAction}
+      data-testid="checkbox"
     >
       <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
-        <BsCheck color={checked ? "" : "#00000000"} />
+        <BsCheck data-testid="tick" color={checked ? "" : "#00000000"} />
       </div>
     </button>
   );

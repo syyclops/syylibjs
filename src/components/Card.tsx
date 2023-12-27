@@ -27,6 +27,7 @@ const Card = ({
       style={{
         border: "1px solid #374171",
       }}
+      data-testid="card"
     >
       {children}
     </div>
