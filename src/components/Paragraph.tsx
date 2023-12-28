@@ -14,6 +14,7 @@ const Paragraph = ({ children, clamp, cx = "" }: ParagraphProps) => {
         cx
       )}
       title={clamp ? children : undefined}
+      data-testid="paragraph"
     >
       {children}
     </div>

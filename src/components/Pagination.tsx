@@ -45,6 +45,7 @@ const Pagination = ({
           "cursor-pointer"
         )}
         onClick={() => handlePageChange(1)}
+        data-testid="first"
       >
         1
       </button>
@@ -81,6 +82,7 @@ const Pagination = ({
             "cursor-pointer"
           )}
           onClick={() => handlePageChange(i)}
+          data-testid={`pages-${i + 1}`}
         >
           {i}
         </button>
@@ -113,6 +115,7 @@ const Pagination = ({
           "cursor-pointer"
         )}
         onClick={() => handlePageChange(totalPages)}
+        data-testid="last"
       >
         {totalPages}
       </button>
@@ -138,6 +141,7 @@ const Pagination = ({
           )}
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
+          data-testid="previous"
         >
           <BiChevronLeft />
         </button>
@@ -158,6 +162,7 @@ const Pagination = ({
           )}
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
+          data-testid="next"
         >
           <BiChevronRight />
         </button>
