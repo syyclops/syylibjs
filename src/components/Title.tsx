@@ -16,6 +16,7 @@ const Title = ({ element, text, align, color = "", cx = "" }: TitleProps) => {
         cx
       )}
       title={text}
+      data-testid="title"
     >
       {text}
     </div>

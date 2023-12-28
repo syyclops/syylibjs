@@ -4,7 +4,7 @@ import Sample from "../vitest/Sample";
 
 beforeEach(() => cleanup);
 
-describe("test sample component", () => {
+describe("render Sample.tsx component", () => {
   it("render component", () => {
     render(<Sample bg="red" text="SAMPLE" />);
   });
