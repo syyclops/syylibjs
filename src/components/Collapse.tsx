@@ -22,6 +22,7 @@ const Collapse = ({
         ),
         cx
       )}
+      data-testid="collapse"
     >
       {content}
     </div>

@@ -11,7 +11,7 @@ import { BiLoaderAlt } from "react-icons/bi";
 const Action = ({
   type,
   children,
-  variant = "primary",
+  variant,
   leftIcon,
   rightIcon,
   rounded = false,
@@ -41,7 +41,7 @@ const Action = ({
             ? variants[variant]
             : type === "icon"
             ? variants["transparent"]
-            : "",
+            : variants["primary"],
           sizes[size],
           clickable
             ? "hover:opacity-90 cursor-pointer"
@@ -53,11 +53,20 @@ const Action = ({
       )}
       onClick={onAction}
       disabled={!clickable}
+      data-testid="action"
     >
       <>
-        {leftIcon && <LeftIcon className="mr-2" size={iconSize} />}
+        {leftIcon && (
+          <LeftIcon data-testid="left-icon" className="mr-2" size={iconSize} />
+        )}
         {children}
-        {rightIcon && <RightIcon className="ml-2" size={iconSize} />}
+        {rightIcon && (
+          <RightIcon
+            data-testid="right-icon"
+            className="ml-2"
+            size={iconSize}
+          />
+        )}
         {loading && (
           <div
             className={classNames(
@@ -65,12 +74,16 @@ const Action = ({
                 ? variants[variant]
                 : type === "icon"
                 ? variants["transparent"]
-                : "",
+                : variants["primary"],
               rounded ? "rounded-full" : "rounded-lg",
               "absolute w-full h-full flex justify-center items-center"
             )}
+            data-testid="loader"
           >
-            <div className={classNames(animate ? "animate-spin" : "")}>
+            <div
+              className={classNames(animate ? "animate-spin" : "")}
+              data-testid="spinner"
+            >
               {loadingIcon ? (
                 <LoadingIcon size={iconSize} />
               ) : (
