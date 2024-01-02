@@ -15,7 +15,7 @@ const Input = ({
   placeholder,
   width = "w-[17rem]",
   height = "h-[2.625rem]",
-  rounded = true,
+  rounded,
   leftIcon,
   rightIcon,
   onClick,
@@ -48,9 +48,13 @@ const Input = ({
         inputRef.current!.focus();
         onClick && onClick();
       }}
+      data-testid="input-holder"
     >
       {leftIcon && (
-        <div className="h-full flex items-center pl-3 pb-[3px]">
+        <div
+          data-testid="left-icon"
+          className="h-full flex items-center pl-3 pb-[3px]"
+        >
           <LeftIcon />
         </div>
       )}
@@ -73,15 +77,17 @@ const Input = ({
           cxLayout,
           cxInput
         )}
+        data-testid="input"
       />
       {(rightIcon || value !== "") && (
         <div
+          data-testid="right-icon"
           className={`h-full flex items-center pl-2 pr-3 pb-[3px] ${
             value !== "" ? "cursor-pointer" : ""
           }`}
           onClick={() => value !== "" && onType({ target: { value: "" } })}
         >
-          {value !== "" ? <AiOutlineClose /> : rightIcon ? <RightIcon /> : null}
+          {value !== "" ? <AiOutlineClose /> : rightIcon && <RightIcon />}
         </div>
       )}
     </div>
