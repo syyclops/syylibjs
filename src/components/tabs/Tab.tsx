@@ -5,13 +5,7 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 import { TabProps } from "../../types/tabs/tab";
 
-const Tab = ({
-  index,
-  title,
-  onAction,
-  selected = false,
-  cx = "",
-}: TabProps) => {
+const Tab = ({ index, title, onAction, selected, cx = "" }: TabProps) => {
   return (
     <div
       className={twMerge(
@@ -32,6 +26,7 @@ const Tab = ({
       onClick={() => {
         onAction(index);
       }}
+      data-testid={`tab-${index}`}
     >
       {title}
     </div>

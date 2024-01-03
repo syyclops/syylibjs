@@ -7,8 +7,8 @@ import { TabsProps } from "../../types/tabs/tabs";
 
 const Tabs = ({
   children,
-  justifyBetween = false,
-  wrap = false,
+  justifyBetween,
+  wrap,
   cx = "",
 }: TabsProps) => {
   return (
@@ -28,6 +28,7 @@ const Tabs = ({
       style={{
         border: "1px solid #45518D",
       }}
+      data-testid="tabs"
     >
       {children}
     </div>
