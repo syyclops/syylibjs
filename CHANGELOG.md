@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [8.3.13](https://github.com/syyclops/syylibjs/compare/v8.3.12...v8.3.13) (2024-01-04)
+
+
+### Features
+
+* **polish:** input component ([04b82ec](https://github.com/syyclops/syylibjs/commit/04b82ec7a725d9b9cb1bf435c8d42ee884790499))
+
 ### [8.3.12](https://github.com/syyclops/syylibjs/compare/v8.3.11...v8.3.12) (2024-01-02)
 
 
