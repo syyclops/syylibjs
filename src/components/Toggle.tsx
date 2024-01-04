@@ -25,6 +25,7 @@ const Toggle = ({
       onClick={() => {
         onAction(!on);
       }}
+      data-testid="toggle"
     >
       <div
         className={classNames(
@@ -37,6 +38,7 @@ const Toggle = ({
           !on ? "translate-x-[1%]" : "translate-x-[90%]",
           sizes[size].switch
         )}
+        data-testid="toggle-dot"
       />
     </div>
   );

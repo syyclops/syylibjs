@@ -8,18 +8,18 @@ import { variants } from "../config/textArea";
 
 const TextArea = ({
   name,
-  variant = "light",
-  height = 0,
+  variant,
+  height,
   value,
   placeholder,
   onAction,
   onKeyDown,
   onType,
-  rounded = false,
-  cx = "",
-  width = 0,
-  disableResize = false,
-  textAreaDisbled = false,
+  rounded,
+  cx,
+  width,
+  disableResize,
+  textAreaDisabled,
 }: textareaprops) => {
   return (
     <textarea
@@ -28,22 +28,22 @@ const TextArea = ({
       name={name}
       spellCheck={false}
       value={value}
-      rows={height}
+      rows={height ? height : 0}
       cols={width}
-      disabled={textAreaDisbled}
+      disabled={textAreaDisabled}
       placeholder={placeholder}
       onClick={onAction}
       className={twMerge(
         classNames(
-          width,
-          variants[variant],
+          variant ? variants[variant] : variants["light"],
           disableResize ? "resize-none" : "resize",
           rounded ? "rounded-[1.5rem] pl-2" : "rounded-lg",
           "not-italic  border-none outline-none"
         ),
-        cx
+        cx ? cx : ""
       )}
-    ></textarea>
+      data-testid="textarea"
+    />
   );
 };
 

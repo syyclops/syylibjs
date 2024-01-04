@@ -1,17 +1,17 @@
 type textareaprops = {
-  name?: string;
-  variant?: "primary" | "secondary" | "light" | "dark";
   height: number;
   value: string;
+  onType: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  name?: string;
+  variant?: "primary" | "secondary" | "light" | "dark";
   placeholder?: string;
   rounded?: boolean;
   onAction?: () => void;
   cx?: string;
   width?: number;
   disableResize?: boolean;
-  onType: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
   onKeyDown?: (e: React.KeyboardEvent<HTMLTextAreaElement>) => void;
-  textAreaDisbled?: boolean;
+  textAreaDisabled?: boolean;
 };
 
 type textAreaVariantProps = {

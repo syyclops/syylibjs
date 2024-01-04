@@ -1,4 +1,6 @@
 type ToggleProps = {
+  onAction: (state: boolean) => void;
+  on: boolean;
   variant?:
     | "primary"
     | "secondary"
@@ -10,8 +12,6 @@ type ToggleProps = {
     | "lighter"
     | "lightest";
   size?: "xs" | "sm" | "md" | "lg";
-  onAction: (state: boolean) => void;
-  on: boolean;
 };
 
 type SizeProps = {
