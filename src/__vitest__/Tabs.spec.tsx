@@ -84,20 +84,20 @@ describe("render Tabs.tsx & Tab.tsx component", () => {
     );
     expect(
       renderTabsComponent
-        .getByTestId("tabs")
+        .getByTestId("tabs-wrapper")
         .classList.contains("justify-start")
     ).toBeFalsy();
     expect(
       renderTabsComponent
-        .getByTestId("tabs")
+        .getByTestId("tabs-wrapper")
         .classList.contains("justify-between")
     ).toBeTruthy();
     expect(
-      renderTabsComponent.getByTestId("tabs").classList.contains("flex-wrap")
+      renderTabsComponent.getByTestId("tabs-wrapper").classList.contains("flex-wrap")
     ).toBeFalsy();
     expect(
       renderTabsComponent
-        .getByTestId("tabs")
+        .getByTestId("tabs-wrapper")
         .classList.contains("overflow-x-auto")
     ).toBeTruthy();
   });
@@ -141,21 +141,21 @@ describe("render Tabs.tsx & Tab.tsx component", () => {
     );
     expect(
       renderTabsComponent
-        .getByTestId("tabs")
+        .getByTestId("tabs-wrapper")
         .classList.contains("justify-between")
     ).toBeFalsy();
     expect(
       renderTabsComponent
-        .getByTestId("tabs")
+        .getByTestId("tabs-wrapper")
         .classList.contains("justify-start")
     ).toBeTruthy();
     expect(
       renderTabsComponent
-        .getByTestId("tabs")
+        .getByTestId("tabs-wrapper")
         .classList.contains("overflow-x-auto")
     ).toBeFalsy();
     expect(
-      renderTabsComponent.getByTestId("tabs").classList.contains("flex-wrap")
+      renderTabsComponent.getByTestId("tabs-wrapper").classList.contains("flex-wrap")
     ).toBeTruthy();
   });
 

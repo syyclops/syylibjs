@@ -28,7 +28,7 @@ const Tabs = ({
       style={{
         border: "1px solid #45518D",
       }}
-      data-testid="tabs"
+      data-testid="tabs-wrapper"
     >
       {children}
     </div>
