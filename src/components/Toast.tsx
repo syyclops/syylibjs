@@ -52,15 +52,22 @@ const Toast = ({
             variants[variant],
             "w-fit py-3 px-4 rounded-md shadow-lg"
           )}
+          data-testid="toast"
         >
           <div className="flex justify-between items-center">
             <div className="flex items-center">
               <Icon className="mr-3" />
-              <span className="text-sm font-semibold">{message}</span>
+              <span
+                className="text-sm font-semibold"
+                data-testid="toast-message"
+              >
+                {message}
+              </span>
             </div>
             <button
               className="text-white hover:text-gray-100 font-semibold ml-2 bg-transparent border-none cursor-pointer"
               onClick={() => handleonClose()}
+              data-testid="close"
             >
               <FiX />
             </button>

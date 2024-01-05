@@ -8,6 +8,12 @@ const icons: IconProps = {
   success: FiCheckCircle,
   warning: AiOutlineWarning,
   info: FiInfo,
+  dark: FiInfo,
+  darker: FiInfo,
+  darkest: FiInfo,
+  light: FiInfo,
+  lighter: FiInfo,
+  lightest: FiInfo,
 };
 
 const placements: AlignProps = {

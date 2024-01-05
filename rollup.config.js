@@ -23,6 +23,10 @@ export default [
       terser(),
       css(),
     ],
+    onwarn(warning, warn) {
+      if (warning.code === "THIS_IS_UNDEFINED") return;
+      warn(warning);
+    },
   },
   {
     input: "dist/esm/index.d.ts",

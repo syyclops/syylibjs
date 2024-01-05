@@ -32,6 +32,12 @@ type IconProps = {
   success: IconType;
   warning: IconType;
   info: IconType;
+  dark: IconType;
+  darker: IconType;
+  darkest: IconType;
+  light: IconType;
+  lighter: IconType;
+  lightest: IconType;
 };
 
 type PlacementProps = {

@@ -23,6 +23,7 @@ const ToolTip = ({
       onFocus={() => setHover(true)}
       onBlur={() => setHover(false)}
       onMouseOut={() => setHover(false)}
+      data-testid="tooltip"
     >
       {hover && (
         <div
@@ -35,6 +36,7 @@ const ToolTip = ({
             ),
             cx
           )}
+          data-testid="tooltip-title"
         >
           {title}
         </div>
