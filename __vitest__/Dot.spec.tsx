@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, render } from "@testing-library/react";
-import Dot from "../components/Dot";
+import Dot from "../src/components/Dot";
 
 beforeEach(() => cleanup);
 

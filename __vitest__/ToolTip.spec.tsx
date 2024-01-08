@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, fireEvent, render } from "@testing-library/react";
-import ToolTip from "../components/ToolTip";
+import ToolTip from "../src/components/ToolTip";
 
 beforeEach(() => cleanup);
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, render } from "@testing-library/react";
-import Title from "../components/Title";
+import Title from "../src/components/Title";
 
 beforeEach(() => cleanup);
 

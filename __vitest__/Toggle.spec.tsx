@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, fireEvent, render } from "@testing-library/react";
-import Toggle from "../components/Toggle";
+import Toggle from "../src/components/Toggle";
 
 beforeEach(() => cleanup);
 

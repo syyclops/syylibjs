@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, render } from "@testing-library/react";
-import Paragraph from "../components/Paragraph";
+import Paragraph from "../src/components/Paragraph";
 
 beforeEach(() => cleanup);
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, render } from "@testing-library/react";
-import Collapse from "../components/Collapse";
+import Collapse from "../src/components/Collapse";
 
 beforeEach(() => cleanup);
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, fireEvent, render } from "@testing-library/react";
-import Input from "../components/Input";
+import Input from "../src/components/Input";
 import { BiLeftArrow } from "react-icons/bi";
 
 beforeEach(() => cleanup);

@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, render } from "@testing-library/react";
-import Card from "../components/Card";
+import Card from "../src/components/Card";
 
 beforeEach(() => cleanup);
 

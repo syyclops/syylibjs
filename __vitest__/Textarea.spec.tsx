@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, fireEvent, render } from "@testing-library/react";
-import TextArea from "../components/TextArea";
+import TextArea from "../src/components/TextArea";
 
 beforeEach(() => cleanup);
 
