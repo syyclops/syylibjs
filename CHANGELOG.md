@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [8.3.19](https://github.com/syyclops/syylibjs/compare/v8.3.18...v8.3.19) (2024-01-08)
+
 ### [8.3.18](https://github.com/syyclops/syylibjs/compare/v8.3.17...v8.3.18) (2024-01-08)
 
 ### [8.3.17](https://github.com/syyclops/syylibjs/compare/v8.3.16...v8.3.17) (2024-01-08)
