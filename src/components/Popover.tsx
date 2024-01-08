@@ -47,6 +47,7 @@ const Popover = ({
     <div
       className="w-fit relative text-white bg-transparent border-none"
       ref={ref}
+      data-testid="popover"
     >
       {open && (
         <div
@@ -62,6 +63,7 @@ const Popover = ({
             "before:border-none",
             cx
           )}
+          data-testid="content"
         >
           {content}
         </div>
