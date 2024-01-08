@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, fireEvent, render } from "@testing-library/react";
-import Bubble from "../components/Bubble";
+import Bubble from "../src/components/Bubble";
 
 beforeEach(() => cleanup);
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, render } from "@testing-library/react";
-import Badge from "../components/Badge";
+import Badge from "../src/components/Badge";
 
 beforeEach(() => cleanup);
 

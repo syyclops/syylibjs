@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, fireEvent, render } from "@testing-library/react";
-import Popover from "../components/Popover";
+import Popover from "../src/components/Popover";
 import { vi } from "vitest";
 
 beforeEach(() => cleanup);

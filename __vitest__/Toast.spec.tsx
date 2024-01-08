@@ -6,7 +6,7 @@ import {
   screen,
   waitFor,
 } from "@testing-library/react";
-import Toast from "../components/Toast";
+import Toast from "../src/components/Toast";
 import { vi } from "vitest";
 
 beforeEach(() => {

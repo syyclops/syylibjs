@@ -1,7 +1,7 @@
 import React from "react";
 import { cleanup, fireEvent, render } from "@testing-library/react";
-import Tabs from "../components/tabs/Tabs";
-import Tab from "../components/tabs/Tab";
+import Tabs from "../src/components/tabs/Tabs";
+import Tab from "../src/components/tabs/Tab";
 
 beforeEach(() => cleanup);
 
