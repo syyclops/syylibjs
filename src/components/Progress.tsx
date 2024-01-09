@@ -7,7 +7,7 @@ import { ProgressProps } from "../types/progress";
 import { variants } from "../config";
 import { barSizes, circleStroke } from "../config/progress";
 
-const renderBar = ({
+const RenderBar = ({
   percent = 0,
   barSize = "sm",
   variant = "primary",
@@ -25,6 +25,7 @@ const renderBar = ({
         ),
         remainingBg
       )}
+      data-testid="bar"
     >
       <div
         className={twMerge(
@@ -38,6 +39,7 @@ const renderBar = ({
         style={{
           width: `${percent}%`,
         }}
+        data-testid="bar-inner"
       >
         {showPercent ? (barSize !== "xs" ? `${percent}%` : "") : ""}
       </div>
@@ -45,13 +47,13 @@ const renderBar = ({
   );
 };
 
-const renderCircle = ({
+const RenderCircle = ({
   circleSize = 100,
   percent = 0,
   variant = "primary",
   completedStroke = "",
   remainingStroke = "",
-  fg = "",
+  fg = "white",
   showPercent = true,
 }: ProgressProps) => {
   const size = circleSize;
@@ -68,6 +70,7 @@ const renderCircle = ({
         width: `${size}`,
         height: `${size}`,
       }}
+      data-testid="circle"
     >
       <svg
         className="rotate-[-90deg]"
@@ -86,6 +89,7 @@ const renderCircle = ({
           cy={`${x}`}
           r={`${rad}`}
           strokeWidth={`${stroke}`}
+          data-testid="circle-outer"
         ></circle>
         <circle
           style={{
@@ -103,6 +107,7 @@ const renderCircle = ({
           strokeLinecap={"round"}
           strokeDasharray={`${circumference}`}
           strokeDashoffset={`${offset}`}
+          data-testid="circle-inner"
         ></circle>
       </svg>
       {showPercent && (
@@ -110,8 +115,9 @@ const renderCircle = ({
           className="absolute font-semibold"
           style={{
             fontSize: `${(size as number) / 5.2}`,
-            color: fg ? fg : "white",
+            color: fg,
           }}
+          data-testid="circle-percent"
         >
           {percent}%
         </div>
@@ -121,7 +127,11 @@ const renderCircle = ({
 };
 
 const Progress = (props: ProgressProps) => {
-  return props.type === "bar" ? renderBar(props) : renderCircle(props);
+  return props.type === "bar" ? (
+    <RenderBar {...props} />
+  ) : (
+    <RenderCircle {...props} />
+  );
 };
 
 export default Progress;

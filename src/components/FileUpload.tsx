@@ -31,6 +31,7 @@ const FileUpload = ({
       onClick={() => {
         fileInputRef.current!.click();
       }}
+      data-testid="file-upload"
     >
       {children}
       <input
