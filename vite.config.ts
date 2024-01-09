@@ -2,6 +2,7 @@
 
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { configDefaults } from "vitest/config";
 
 export default defineConfig({
   plugins: [react()],
@@ -9,10 +10,10 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: ["./__vitest__/setup/dom.ts"],
-    exclude: ["dist", "node_modules"],
+    exclude: [...configDefaults.exclude, "dist", "node_modules"],
     passWithNoTests: true,
     coverage: {
-      exclude: ["src/__vitest__/**"],
+      exclude: ["__vitest__/**"],
     },
     threads: false,
   },
