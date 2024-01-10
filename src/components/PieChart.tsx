@@ -34,6 +34,7 @@ const RenderProgress = ({
       strokeLinecap={"round"}
       strokeDasharray={`${circumference}`}
       strokeDashoffset={`${offset}`}
+      data-testid={`circle-${circle.variant}`}
     ></circle>
   );
 };
@@ -56,6 +57,7 @@ const PieChart = ({ circleSize = 100, circles = [] }: PieChartProps) => {
           width: `${size}`,
           height: `${size}`,
         }}
+        data-testid="circle-svg"
       >
         {circles.map((circle: CircleProps, i: number) => (
           <RenderProgress key={i} circle={circle} size={size} stroke={stroke} />
