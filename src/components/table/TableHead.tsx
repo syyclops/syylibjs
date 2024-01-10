@@ -7,7 +7,7 @@ import { twMerge } from "tailwind-merge";
 
 const TableHead = ({
   children,
-  divideX = true,
+  divideX,
   onClick,
   cx = "",
   colspan = 1,
@@ -18,7 +18,7 @@ const TableHead = ({
         classnames(
           "px-6 py-3",
           "text-left",
-          divideX ? "border border-[#00000050]" : "",
+          divideX === true ? "border border-[#00000050]" : "",
           "text-sm",
           "font-medium",
           "tracking-wider"
@@ -28,6 +28,7 @@ const TableHead = ({
       colSpan={colspan}
       onClick={() => onClick && onClick()}
       scope="col"
+      data-testid="head"
     >
       {children}
     </th>

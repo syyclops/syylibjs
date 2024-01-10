@@ -96,7 +96,7 @@ describe("render Toast.tsx component", () => {
     ).toBeTruthy();
   });
 
-  it("handleonClose fn", () => {
+  it("onClose prop", () => {
     const onCloseMock = vi.fn();
     render(<Toast message="Test Message" open={true} onClose={onCloseMock} />);
     fireEvent.click(screen.getByTestId("close"));

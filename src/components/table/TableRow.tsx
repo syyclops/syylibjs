@@ -6,7 +6,7 @@ import classnames from "classnames";
 
 const TableRow = ({ children, onClick, cx = "" }: TRowProps) => {
   return (
-    <tr className={classnames(cx)} onClick={() => onClick && onClick()}>
+    <tr className={classnames(cx)} onClick={() => onClick && onClick()} data-testid="row">
       {children}
     </tr>
   );

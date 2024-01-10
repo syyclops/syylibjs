@@ -7,7 +7,7 @@ import { twMerge } from "tailwind-merge";
 
 const TableDef = ({
   children,
-  divideX = true,
+  divideX,
   onClick,
   colSpan = 1,
   cx = "",
@@ -25,6 +25,7 @@ const TableDef = ({
       )}
       colSpan={colSpan}
       onClick={() => onClick && onClick()}
+      data-testid="def"
     >
       {children}
     </td>

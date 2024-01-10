@@ -13,6 +13,7 @@ const TableBody = ({ children, onClick, cx = "" }: TBodyProps) => {
         cx
       )}
       onClick={() => onClick && onClick()}
+      data-testid="body"
     >
       {children}
     </tbody>

@@ -10,6 +10,7 @@ const TableFooter = ({ children, onClick, cx = "" }: TFooterProps) => {
     <tfoot
       className={twMerge(classnames("bg-dark-neutral-200"), cx)}
       onClick={() => onClick && onClick()}
+      data-testid="footer"
     >
       {children}
     </tfoot>

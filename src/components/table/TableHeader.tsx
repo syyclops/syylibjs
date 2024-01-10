@@ -21,6 +21,7 @@ const TableHeader = ({
         cx
       )}
       onClick={() => onClick && onClick()}
+      data-testid="header"
     >
       {children}
     </thead>
