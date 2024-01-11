@@ -25,6 +25,7 @@ const SelectOption = ({ children, onSelect, name, cx }: SelectOptionProps) => {
         ),
         cx
       )}
+      data-testid="select-option"
     >
       {children}
     </button>
