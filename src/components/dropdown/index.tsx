@@ -68,6 +68,7 @@ const Dropdown = ({
         cxLayout
       )}
       ref={ref}
+      data-testid="dropdown"
     >
       <Action
         type={type}
@@ -96,6 +97,7 @@ const Dropdown = ({
             "mt-[5px]",
             "bg-inherit"
           )}
+          data-testid="dropdown-popup"
         >
           {children}
         </div>

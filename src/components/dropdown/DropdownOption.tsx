@@ -30,6 +30,7 @@ const DropdownOption = ({
         ),
         cx
       )}
+      data-testid="dropdown-option"
     >
       {children}
     </button>

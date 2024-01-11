@@ -53,6 +53,7 @@ const Select = ({
         cxLayout
       )}
       ref={ref}
+      data-testid="select"
     >
       <button
         role="select"
@@ -101,11 +102,12 @@ const Select = ({
               "max-h-[18.75rem]",
               "overflow-y-auto",
               "w-full",
-              open ? "rounded-b-lg" : "",
+              "rounded-b-lg",
               "bg-inherit"
             ),
             cxLayout
           )}
+          data-testid="select-popup"
         >
           {children}
         </div>
