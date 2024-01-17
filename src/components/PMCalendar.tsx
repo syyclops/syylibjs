@@ -35,7 +35,7 @@ const PMCalendar = ({
           "font-bold"
         )}
       >
-        <div>{header}</div>
+        <div data-testid="header">{header}</div>
       </div>
       <div
         className={classnames(
@@ -91,6 +91,7 @@ const PMCalendar = ({
                             content: c.content,
                           })
                         }
+                        data-testid={`content-${index * 3}-${i}`}
                       >
                         {c.content}
                       </button>
@@ -99,7 +100,10 @@ const PMCalendar = ({
                 )}
             </div>
           ) : (
-            <div className="flex flex-col justify-end h-[95%] p-0.5">
+            <div
+              className="flex flex-col justify-end h-[95%] p-0.5"
+              data-testid={`loader-0`}
+            >
               <div
                 className={classnames(
                   "relative",
@@ -136,7 +140,10 @@ const PMCalendar = ({
               />
             </div>
           )}
-          <div className="absolute -bottom-7 left-1/2 -translate-x-1/2 text-sm text-light-neutral-300">
+          <div
+            className="absolute -bottom-7 left-1/2 -translate-x-1/2 text-sm text-light-neutral-300"
+            data-testid={`month-${index * 3}`}
+          >
             {content[index * 3].month}
           </div>
           <div className="absolute bottom-0 -left-1 w-2 h-2 bg-mid-neutral-200 rounded-full" />
@@ -150,7 +157,10 @@ const PMCalendar = ({
             borderLeft: "1px solid #45518D",
           }}
         >
-          <div className="absolute -bottom-7 left-1/2 -translate-x-1/2 text-sm text-light-neutral-300">
+          <div
+            className="absolute -bottom-7 left-1/2 -translate-x-1/2 text-sm text-light-neutral-300"
+            data-testid={`month-${index * 3 + 1}`}
+          >
             {content[index * 3 + 1].month}
           </div>
 
@@ -190,6 +200,7 @@ const PMCalendar = ({
                           content: c.content,
                         })
                       }
+                      data-testid={`content-${index * 3 + 1}-${i}`}
                     >
                       {c.content}
                     </button>
@@ -197,7 +208,10 @@ const PMCalendar = ({
                 )}
             </div>
           ) : (
-            <div className="flex flex-col justify-end h-[95%] p-0.5">
+            <div
+              className="flex flex-col justify-end h-[95%] p-0.5"
+              data-testid={`loader-1`}
+            >
               <div
                 className={classnames(
                   "relative",
@@ -229,7 +243,10 @@ const PMCalendar = ({
             borderLeft: "1px solid #45518D",
           }}
         >
-          <div className="absolute -bottom-7 left-1/2 -translate-x-1/2 text-sm text-light-neutral-300">
+          <div
+            className="absolute -bottom-7 left-1/2 -translate-x-1/2 text-sm text-light-neutral-300"
+            data-testid={`month-${index * 3 + 2}`}
+          >
             {content[index * 3 + 2].month}
           </div>
 
@@ -269,6 +286,7 @@ const PMCalendar = ({
                           content: c.content,
                         })
                       }
+                      data-testid={`content-${index * 3 + 2}-${i}`}
                     >
                       {c.content}
                     </button>
@@ -276,7 +294,10 @@ const PMCalendar = ({
                 )}
             </div>
           ) : (
-            <div className="flex flex-col justify-end h-[95%] p-0.5">
+            <div
+              className="flex flex-col justify-end h-[95%] p-0.5"
+              data-testid={`loader-2`}
+            >
               <div
                 className={classnames(
                   "relative",
@@ -341,6 +362,7 @@ const PMCalendar = ({
           "flex justify-center items-center",
           "font-bold"
         )}
+        data-testid="footer"
       >
         {footer}
       </div>

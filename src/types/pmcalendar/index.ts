@@ -2,7 +2,7 @@ type PMCalendarProps = {
   header: string;
   index: number;
   content: ContentProps[];
-  onNav: (n: string) => void;
+  onNav?: (n: string) => void;
   footer: JSX.Element;
   onAction: (a: PMActionProps) => void;
   highlight?: { monthIndex: number; disciplineIndex: number };
