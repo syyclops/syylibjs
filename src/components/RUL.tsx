@@ -31,7 +31,7 @@ const RUL = ({
           "font-bold"
         )}
       >
-        <div>{header}</div>
+        <div data-testid="header">{header}</div>
       </div>
       <div
         className={classnames(
@@ -96,13 +96,17 @@ const RUL = ({
                       cost: c.cost,
                     })
                   }
+                  data-testid={`discipline-0-${i}`}
                 >
                   <div>{c.content}</div>
                   <div>${c.cost}</div>
                 </button>
               ))
             ) : (
-              <div className="flex flex-col justify-end h-[95%] p-0.5">
+              <div
+                className="flex flex-col justify-end h-[95%] p-0.5"
+                data-testid="loader"
+              >
                 <div
                   className={classnames(
                     "relative",
@@ -177,6 +181,7 @@ const RUL = ({
                       cost: c.cost,
                     })
                   }
+                  data-testid={`discipline-1-${i}`}
                 >
                   <div>{c.content}</div>
                   <div>${c.cost}</div>
@@ -293,6 +298,7 @@ const RUL = ({
                       cost: c.cost,
                     })
                   }
+                  data-testid={`discipline-2-${i}`}
                 >
                   <div>{c.content}</div>
                   <div>${c.cost}</div>
@@ -348,6 +354,7 @@ const RUL = ({
           "flex justify-center items-center",
           "font-bold"
         )}
+        data-testid="footer"
       >
         {footer}
       </div>
