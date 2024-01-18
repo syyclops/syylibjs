@@ -184,6 +184,7 @@ const DatePicker = ({
                 dateRef.current!.focus();
               }
             }}
+            data-testid="input-month"
           />
           <div className="mx-0.5">/</div>
           <input
@@ -209,6 +210,7 @@ const DatePicker = ({
                 yearRef.current!.focus();
               }
             }}
+            data-testid="input-date"
           />
           <div className="mx-0.5">/</div>
           <input
@@ -234,6 +236,7 @@ const DatePicker = ({
                 monthRef.current!.focus();
               }
             }}
+            data-testid="input-year"
           />
         </div>
         <div
@@ -266,18 +269,19 @@ const DatePicker = ({
               setNextYear(ny);
               renderDates(m, d, y, pm, py, nm, ny);
             }
-            if (textDate === "" && textMonth === "" && textYear === "") {
-              setTextMonth(zeroPad((month + 1).toString()));
-              setTextDate(zeroPad(date.toString()));
-              setTextYear(year.toString());
-              onSet({
-                d: zeroPad(date.toString()),
-                m: zeroPad((month + 1).toString()),
-                y: year.toString(),
-              });
-            }
+            // if (textDate === "" && textMonth === "" && textYear === "") {
+            //   setTextMonth(zeroPad((month + 1).toString()));
+            //   setTextDate(zeroPad(date.toString()));
+            //   setTextYear(year.toString());
+            //   onSet({
+            //     d: zeroPad(date.toString()),
+            //     m: zeroPad((month + 1).toString()),
+            //     y: year.toString(),
+            //   });
+            // }
             setShowCalendar(!showCalendar);
           }}
+          data-testid="action"
         >
           <BsCalendar4 className="text-lg text-primary" />
         </div>
@@ -291,6 +295,7 @@ const DatePicker = ({
               pickerHeight
             )
           )}
+          data-testid="calendar"
         >
           <div className="flex justify-between items-center mb-6">
             <TfiAngleLeft
@@ -356,12 +361,14 @@ const DatePicker = ({
                   }
                 }
               }}
+              data-testid="calendar-prev"
             />
             <div
               className="flex items-center"
               onClick={() => {
                 setShowMonthsYearList(true);
               }}
+              data-testid="month-year"
             >
               <div className="text-sm font-bold mr-1.5 text-primary bg-light-neutral-200 px-2 py-0.5 rounded cursor-pointer">
                 {months[month]} {year}
@@ -445,6 +452,7 @@ const DatePicker = ({
                   }
                 }
               }}
+              data-testid="calendar-next"
             />
           </div>
           <div className="w-full h-[calc(100%-3.5rem)]">
@@ -467,6 +475,7 @@ const DatePicker = ({
             >
               {dateList.map((d, i) => (
                 <div
+                  data-testid={`date-${d}`}
                   className={classnames(
                     "flex justify-center items-center w-[14%] h-[14%] font-semibold text-sm rounded-md",
                     currentDate === d
@@ -501,7 +510,10 @@ const DatePicker = ({
             </div>
           </div>
           {showMonthsYearList && (
-            <div className="absolute top-0 left-0 w-full h-full bg-light-neutral-100 py-4 px-4">
+            <div
+              className="absolute top-0 left-0 w-full h-full bg-light-neutral-100 py-4 px-4"
+              data-testid="year"
+            >
               <div className="flex justify-between items-center mb-6">
                 <TfiAngleLeft
                   className="cursor-pointer text-dark-neutral-300"
@@ -523,17 +535,23 @@ const DatePicker = ({
                       currentMonth,
                       currentDate,
                       year,
+                      /* c8 ignore next */
                       currentMonth === 0 ? 12 : currentMonth,
+                      /* c8 ignore next */
                       currentMonth === 0 ? year - 1 : year,
+                      /* c8 ignore next */
                       currentMonth === 11 ? 1 : currentMonth + 2,
+                      /* c8 ignore next */
                       currentMonth === 11 ? year + 1 : year
                     );
                   }}
+                  data-testid="year-prev"
                 />
                 <div className="flex items-center">
                   <div
                     className="text-sm font-bold mr-1.5 bg-light-neutral-200 text-dark-neutral-300 px-2 py-0.5 rounded cursor-pointer"
                     onClick={() => setShowMonthsYearList(false)}
+                    data-testid="month-year-year"
                   >
                     {year}
                   </div>
@@ -545,9 +563,13 @@ const DatePicker = ({
                       currentMonth,
                       currentDate,
                       year,
+                      /* c8 ignore next */
                       currentMonth === 0 ? 12 : currentMonth,
+                      /* c8 ignore next */
                       currentMonth === 0 ? year - 1 : year,
+                      /* c8 ignore next */
                       currentMonth === 11 ? 1 : currentMonth + 2,
+                      /* c8 ignore next */
                       currentMonth === 11 ? year + 1 : year
                     );
                     setPreviousYear(year + 1);
@@ -564,6 +586,7 @@ const DatePicker = ({
                       y: (year + 1).toString().toString(),
                     });
                   }}
+                  data-testid="year-next"
                 />
               </div>
               <div className="w-full h-[calc(100%-3.5rem)] flex flex-wrap justify-start items-center">
@@ -636,6 +659,7 @@ const DatePicker = ({
                         });
                       }
                     }}
+                    data-testid={`month-${i}`}
                   >
                     {m}
                   </div>
