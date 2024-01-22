@@ -37,12 +37,14 @@ const EnergyBarWidget = ({
         style={{
           padding: "0px 0.7rem",
         }}
+        data-testid="header"
       >
         {header}
       </div>
       <div
         className="w-full flex justify-between px-4 mt-2"
         style={{ height: "11rem" }}
+        data-testid="widget"
       >
         {content.map((contentArray: ContentProps, contentIndex: number) => {
           return (
@@ -56,6 +58,7 @@ const EnergyBarWidget = ({
                         height: c.percent,
                       }}
                       key={i}
+                      data-testid="bars"
                     >
                       <ToolTip
                         title={c.tooltip!}
@@ -70,6 +73,7 @@ const EnergyBarWidget = ({
                           onClick={() => {
                             onAction({ data: contentArray, clusterData: c });
                           }}
+                          data-testid="actions"
                         />
                       </ToolTip>
                     </div>
@@ -82,6 +86,7 @@ const EnergyBarWidget = ({
                   position: "absolute",
                   top: "105%",
                 }}
+                data-testid="labels"
               >
                 {contentArray.label}
               </div>

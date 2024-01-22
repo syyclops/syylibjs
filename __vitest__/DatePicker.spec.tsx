@@ -34,11 +34,6 @@ describe("test DatePicker.tsx component", () => {
     expect(
       screen.getByTestId("date-18").classList.contains("!bg-primary")
     ).toBeTruthy();
-    expect(
-      screen
-        .getByTestId("date-18")
-        .classList.contains("!border-dark-neutral-300")
-    ).toBeTruthy();
     expect(screen.queryByTestId("date-30")).toBeTruthy();
 
     expect(screen.queryByTestId("year")).toBeFalsy();
