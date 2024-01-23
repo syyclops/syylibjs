@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.4.0](https://github.com/syyclops/syylibjs/compare/v8.3.28...v8.4.0) (2024-01-23)
+
+
+### Features
+
+* **polish:** select component ([39488e0](https://github.com/syyclops/syylibjs/commit/39488e0bd13683ca63aae2f49580fc76bc95a1f5))
+
 ### [8.3.28](https://github.com/syyclops/syylibjs/compare/v8.3.27...v8.3.28) (2024-01-22)
 
 ### [8.3.27](https://github.com/syyclops/syylibjs/compare/v8.3.26...v8.3.27) (2024-01-18)
