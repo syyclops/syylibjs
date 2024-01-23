@@ -1,5 +1,5 @@
 type SelectProps = {
-  title: string;
+  title: string | JSX.Element;
   children: JSX.Element | JSX.Element[];
   variant?:
     | "primary"
