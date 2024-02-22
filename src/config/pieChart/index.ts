@@ -18,7 +18,7 @@ const pieStroke: VariantsProps = {
   elec: "stroke-elec",
   mech: "stroke-mech",
   plumb: "stroke-plumb",
-  energyelec: "stroke-energyelec",
+  energyele: "stroke-energyele",
   energysolar: "stroke-energysolar",
   energygas: "stroke-energygas",
   energywater: "stroke-energywater",
