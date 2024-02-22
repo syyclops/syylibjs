@@ -17,7 +17,11 @@ type CircleProps = {
     | "arch"
     | "elec"
     | "mech"
-    | "plumb";
+    | "plumb"
+    | "energyele"
+    | "energygas"
+    | "energysolar"
+    | "energywater";
 };
 
 type PieChartProps = {
