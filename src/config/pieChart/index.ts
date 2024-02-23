@@ -18,6 +18,10 @@ const pieStroke: VariantsProps = {
   elec: "stroke-elec",
   mech: "stroke-mech",
   plumb: "stroke-plumb",
+  energyele: "stroke-energyele",
+  energysolar: "stroke-energysolar",
+  energygas: "stroke-energygas",
+  energywater: "stroke-energywater",
 };
 
 export { pieStroke };
