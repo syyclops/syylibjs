@@ -20,6 +20,10 @@ type VariantsProps = {
   elec?: string;
   mech?: string;
   plumb?: string;
+  energyele: string;
+  energysolar: string;
+  energygas: string;
+  energywater: string;
 };
 
 type SizeProps = {
