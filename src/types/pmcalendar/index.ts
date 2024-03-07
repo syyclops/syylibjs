@@ -1,5 +1,5 @@
 type PMCalendarProps = {
-  header: string;
+  header: JSX.Element;
   index: number;
   content: ContentProps[];
   onNav?: (n: string) => void;
@@ -7,6 +7,7 @@ type PMCalendarProps = {
   onAction: (a: PMActionProps) => void;
   highlight?: { monthIndex: number; disciplineIndex: number };
   isLoading?: boolean;
+  showAll?: boolean;
 };
 
 type PMActionProps = {
