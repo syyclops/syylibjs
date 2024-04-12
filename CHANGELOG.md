@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [9.0.0](https://github.com/syyclops/syylibjs/compare/v8.6.0...v9.0.0) (2024-04-12)
+
+
+### Bug Fixes
+
+* test cases fail ([674c6f7](https://github.com/syyclops/syylibjs/commit/674c6f78f9ef17eaadacd7eaf310e3b9fad78adf))
+
 ## [8.7.0](https://github.com/syyclops/syylibjs/compare/v8.6.0...v8.7.0) (2024-03-07)
 
 
