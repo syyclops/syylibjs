@@ -17,6 +17,7 @@ export { default as UxTable } from "./components/table/Table";
 export { default as UxTableHeader } from "./components/table/TableHeader";
 export { default as UxTableBody } from "./components/table/TableBody";
 export { default as UxTableFooter } from "./components/table/TableFooter";
+export { default as UxTableResizableHead } from "./components/table/TableResizableHead";
 export { default as UxTableHead } from "./components/table/TableHead";
 export { default as UxTableRow } from "./components/table/TableRow";
 export { default as UxTableDef } from "./components/table/TableDef";
