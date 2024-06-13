@@ -40,6 +40,11 @@ export { default as UxTabs } from "./components/tabs/Tabs";
 export { default as UxTab } from "./components/tabs/Tab";
 export { default as UxScheduleCalendar } from "./components/ScheduleCalendar";
 export { default as UxTextEditor } from "./components/textEditor";
+export { default as UxChartFrame } from "./components/charts/ChartFrame";
+export { default as UxChartTitle } from "./components/charts/ChartTitle";
+export { default as UxChartActions } from "./components/charts/ChartActions";
+export { default as UxBarGraph } from "./components/charts/BarGraph";
+export { default as UxLineGraph } from "./components/charts/LineGraph";
 
 //Props
 
