@@ -1,5 +1,5 @@
 type PMCalendarProps = {
-  header: JSX.Element;
+  header: string | JSX.Element;
   index: number;
   content: ContentProps[];
   onNav?: (n: string) => void;
