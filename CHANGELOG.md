@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.0.0](https://github.com/syyclops/syylibjs/compare/v9.0.0...v10.0.0) (2024-06-14)
+
+
+### Features
+
+* **new-feature:** add charts ([4c50e0b](https://github.com/syyclops/syylibjs/commit/4c50e0b2c82327355eb9bc77f4d81cca8ade786d))
+
+## [8.7.0](https://github.com/syyclops/syylibjs/compare/v8.6.0...v8.7.0) (2024-03-07)
+
 ## [9.0.0](https://github.com/syyclops/syylibjs/compare/v8.6.0...v9.0.0) (2024-04-12)
 
 - **new-feature:** TableResizableHead
