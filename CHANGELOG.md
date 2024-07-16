@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [11.0.0](https://github.com/syyclops/syylibjs/compare/v10.0.0...v11.0.0) (2024-07-16)
+
+
+### Features
+
+* **polish:** action - hover, outlined, compact styles ([f05121f](https://github.com/syyclops/syylibjs/commit/f05121f3185acffcf28e7283f8aab29d60af2bc0))
+
 ## [10.0.0](https://github.com/syyclops/syylibjs/compare/v9.0.0...v10.0.0) (2024-06-14)
 
 
