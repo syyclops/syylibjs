@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [12.0.0](https://github.com/syyclops/syylibjs/compare/v11.0.0...v12.0.0) (2024-08-29)
+
+
+### Features
+
+* **new-feature:** add multi-level toggle ([e82d744](https://github.com/syyclops/syylibjs/commit/e82d744359978716c92f0b798b5dbfb61b67db21))
+
 ## [11.0.0](https://github.com/syyclops/syylibjs/compare/v10.0.0...v11.0.0) (2024-07-16)
 
 ### Features
