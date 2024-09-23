@@ -41,6 +41,12 @@ export { default as UxTab } from "./components/tabs/Tab";
 export { default as UxScheduleCalendar } from "./components/ScheduleCalendar";
 export { default as UxTextEditor } from "./components/textEditor";
 export { default as UxMultiStateToggle } from "./components/MultiStateToggle";
+export { default as UxChartActions } from "./components/charts/ChartActions";
+export { default as UxChartContent } from "./components/charts/ChartContent";
+export { default as UxChartFrame } from "./components/charts/ChartFrame";
+export { default as UxChartGraph } from "./components/charts/ChartGraph";
+export { default as UxChartTitle } from "./components/charts/ChartTitle";
+export { default as UxRadialChart } from "./components/charts/RadialChart";
 
 //Props
 
