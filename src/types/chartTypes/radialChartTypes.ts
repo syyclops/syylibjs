@@ -25,6 +25,7 @@ interface RadialChartTypes {
           active?: any;
       }) => JSX.Element | null
       tooltipContentStyle?: React.CSSProperties;
+      tooltipCursor?:boolean;
       customLegend?: (props: any) => JSX.Element;
       legendLayout?:"vertical" | "horizontal";
       legendVerticalAlign?: "top" | "middle" | "bottom";

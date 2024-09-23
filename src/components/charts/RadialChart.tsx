@@ -28,6 +28,7 @@ const RadialChart = ({
   labelColor,
   customTooltip,
   tooltipContentStyle,
+  tooltipCursor,
   customLegend,
   legendLayout,
   legendVerticalAlign,
@@ -70,7 +71,7 @@ const RadialChart = ({
               />
               )}
             </RadialBar>
-            {tooltipEnable && (<Tooltip content={customTooltip} contentStyle={tooltipContentStyle}/>)}
+            {tooltipEnable && (<Tooltip cursor={tooltipCursor} content={customTooltip} contentStyle={tooltipContentStyle}/>)}
             {legendEnable && (<Legend
               layout={legendLayout}
               verticalAlign={legendVerticalAlign}
