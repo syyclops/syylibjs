@@ -4,8 +4,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import zoomPlugin from 'chartjs-plugin-zoom';
 import 'chartjs-adapter-date-fns';
-import { UxAction } from "syylibjs";
+import Action from "../Action";
 import { IoMdClose } from "react-icons/io";
+import { ChartGraphType } from "../../types/chartTypes/chartGraphTypes";
 
 // Register the required components
 Chart.register(...registerables);
@@ -29,22 +30,11 @@ const ChartGraph = ({
   customLegends = {enable:true, colorRef:"borderColor", closeIcon:false},
   customPlugins=[],
   onLegendClose,
+  gridColors={color1: '', color2: ''},
   cxLegends = "",
   cxGraph = "",
   cxLayout = "",
-}: {
-  data: DataPropsPrimitive | DataPropsObject;
-  type: "bar" | "line";
-  chartId:string,
-  options?: any;
-  ref?: React.MutableRefObject<HTMLDivElement | null>;
-  customLegends?: {enable:boolean, colorRef:"borderColor" | "backgroundColor", closeIcon:boolean};
-  customPlugins?: any[];
-  onLegendClose?: (e:string) => void;
-  cxLegends?: string;
-  cxGraph?: string;
-  cxLayout?: string;
-}) => {
+}: ChartGraphType) => {
   const [legendClose, setLegendClose]= useState<string>("");
   const chartRef = useRef<Chart | null>(null);
 
@@ -57,7 +47,7 @@ const ChartGraph = ({
           const yAxis = chart.scales['y'];
   
           const xGridLineSpaces = xAxis.ticks.length;
-          const colors = ['#141B3A', '#1C244B'];
+          const colors = gridColors.color1 && gridColors.color1 !== '' && gridColors.color2 && gridColors.color2 !== '' ? [gridColors.color1, gridColors.color2] : ['#141B3A', '#1C244B'];
   
           for (let i = 0; i < xGridLineSpaces; i++) {
               const left = i === 0 ? xAxis.left : xAxis.getPixelForTick(i - 1);
@@ -90,8 +80,8 @@ const withoffsetGridBackgroundPlugin = {
     const barWidth = xScale.width / xScale.ticks.length;
 
     const years = chart.data.labels;
-    const color1 = "#141B3A"; // Replace with your dark color
-    const color2 = "#1C244B"; // Replace with your light color
+    const color1 = gridColors.color1 && gridColors.color1 !== '' ? gridColors.color1 : "#141B3A"; // Replace with your dark color
+    const color2 = gridColors.color2 && gridColors.color2 !== '' ? gridColors.color2 : "#1C244B"; // Replace with your light color
 
     // Save the current canvas state
     ctx.save();
@@ -201,7 +191,7 @@ const withoffsetGridBackgroundPlugin = {
               </div>
               {customLegends.closeIcon && (
               <div>
-              <UxAction
+              <Action
                 type="icon"
                 onAction={() => {
                   setLegendClose(points.label)
@@ -210,7 +200,7 @@ const withoffsetGridBackgroundPlugin = {
                 size="lg"
               >
                <IoMdClose/>
-              </UxAction>
+              </Action>
               </div>
               )}
             </div>
