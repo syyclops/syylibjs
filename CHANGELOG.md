@@ -4,14 +4,26 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [13.1.0](https://github.com/syyclops/syylibjs/compare/v10.1.0...v13.1.0) (2024-10-18)
 
-## [10.1.0](https://github.com/syyclops/syylibjs/compare/v10.0.0...v10.1.0) (2024-10-17)
+## [13.0.0](https://github.com/syyclops/syylibjs/compare/v12.0.0...v13.0.0) (2024-09-23)
 
-## [10.0.0](https://github.com/syyclops/syylibjs/compare/v9.0.0...v10.0.0) (2024-06-14)
+## [12.0.0](https://github.com/syyclops/syylibjs/compare/v11.0.0...v12.0.0) (2024-08-29)
 
 
 ### Features
 
-* **new-feature:** add charts ([4c50e0b](https://github.com/syyclops/syylibjs/commit/4c50e0b2c82327355eb9bc77f4d81cca8ade786d))
+* **new-feature:** add multi-level toggle ([e82d744](https://github.com/syyclops/syylibjs/commit/e82d744359978716c92f0b798b5dbfb61b67db21))
+
+## [11.0.0](https://github.com/syyclops/syylibjs/compare/v10.0.0...v11.0.0) (2024-07-16)
+
+### Features
+
+- **polish:** action - hover, outlined, compact styles ([f05121f](https://github.com/syyclops/syylibjs/commit/f05121f3185acffcf28e7283f8aab29d60af2bc0))
+
+## [10.0.0](https://github.com/syyclops/syylibjs/compare/v9.0.0...v10.0.0) (2024-06-14)
+
+### Features
+
+- **new-feature:** add charts ([4c50e0b](https://github.com/syyclops/syylibjs/commit/4c50e0b2c82327355eb9bc77f4d81cca8ade786d))
 
 ## [8.7.0](https://github.com/syyclops/syylibjs/compare/v8.6.0...v8.7.0) (2024-03-07)
 
@@ -21,14 +33,13 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* test cases fail ([674c6f7](https://github.com/syyclops/syylibjs/commit/674c6f78f9ef17eaadacd7eaf310e3b9fad78adf))
+- test cases fail ([674c6f7](https://github.com/syyclops/syylibjs/commit/674c6f78f9ef17eaadacd7eaf310e3b9fad78adf))
 
 ## [8.7.0](https://github.com/syyclops/syylibjs/compare/v8.6.0...v8.7.0) (2024-03-07)
 
-
 ### Bug Fixes
 
-* test cases fail ([674c6f7](https://github.com/syyclops/syylibjs/commit/674c6f78f9ef17eaadacd7eaf310e3b9fad78adf))
+- test cases fail ([674c6f7](https://github.com/syyclops/syylibjs/commit/674c6f78f9ef17eaadacd7eaf310e3b9fad78adf))
 
 ## [8.6.0](https://github.com/syyclops/syylibjs/compare/v8.4.0...v8.6.0) (2024-03-04)
 
@@ -36,10 +47,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [8.4.0](https://github.com/syyclops/syylibjs/compare/v8.3.28...v8.4.0) (2024-01-23)
 
-
 ### Features
 
-* **polish:** select component ([39488e0](https://github.com/syyclops/syylibjs/commit/39488e0bd13683ca63aae2f49580fc76bc95a1f5))
+- **polish:** select component ([39488e0](https://github.com/syyclops/syylibjs/commit/39488e0bd13683ca63aae2f49580fc76bc95a1f5))
 
 ### [8.3.28](https://github.com/syyclops/syylibjs/compare/v8.3.27...v8.3.28) (2024-01-22)
 
@@ -75,26 +85,23 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [8.3.13](https://github.com/syyclops/syylibjs/compare/v8.3.12...v8.3.13) (2024-01-04)
 
-
 ### Features
 
-* **polish:** input component ([04b82ec](https://github.com/syyclops/syylibjs/commit/04b82ec7a725d9b9cb1bf435c8d42ee884790499))
+- **polish:** input component ([04b82ec](https://github.com/syyclops/syylibjs/commit/04b82ec7a725d9b9cb1bf435c8d42ee884790499))
 
 ### [8.3.12](https://github.com/syyclops/syylibjs/compare/v8.3.11...v8.3.12) (2024-01-02)
 
-
 ### Features
 
-* **polish:** input component ([bc68916](https://github.com/syyclops/syylibjs/commit/bc689160c2a1b03973cc294f586d6ef31cc2b1c1))
+- **polish:** input component ([bc68916](https://github.com/syyclops/syylibjs/commit/bc689160c2a1b03973cc294f586d6ef31cc2b1c1))
 
 ### [8.3.11](https://github.com/syyclops/syylibjs/compare/v8.3.10...v8.3.11) (2023-12-14)
 
 ### [8.3.10](https://github.com/syyclops/syylibjs/compare/v8.3.9...v8.3.10) (2023-12-14)
 
-
 ### Features
 
-* **polish:** text editor ([81f9b8b](https://github.com/syyclops/syylibjs/commit/81f9b8b4d606179d681b9c49eb3208702b0f6496))
+- **polish:** text editor ([81f9b8b](https://github.com/syyclops/syylibjs/commit/81f9b8b4d606179d681b9c49eb3208702b0f6496))
 
 ### [8.3.9](https://github.com/syyclops/syylibjs/compare/v8.3.8...v8.3.9) (2023-12-14)
 
@@ -102,190 +109,165 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [8.3.7](https://github.com/syyclops/syylibjs/compare/v8.3.6...v8.3.7) (2023-12-14)
 
-
 ### Features
 
-* **polish:** text editor ([5b5f619](https://github.com/syyclops/syylibjs/commit/5b5f619dc11bc79c1e186f98dba6cba5c63a0ca5))
+- **polish:** text editor ([5b5f619](https://github.com/syyclops/syylibjs/commit/5b5f619dc11bc79c1e186f98dba6cba5c63a0ca5))
 
 ### [8.3.6](https://github.com/syyclops/syylibjs/compare/v8.3.5...v8.3.6) (2023-12-14)
 
-
 ### Features
 
-* **polish:** text editor ([38a9645](https://github.com/syyclops/syylibjs/commit/38a964539b7817a270161adeeeb3fb5ae8805a72))
+- **polish:** text editor ([38a9645](https://github.com/syyclops/syylibjs/commit/38a964539b7817a270161adeeeb3fb5ae8805a72))
 
 ### [8.3.5](https://github.com/syyclops/syylibjs/compare/v8.3.4...v8.3.5) (2023-12-14)
 
 ### [8.3.4](https://github.com/syyclops/syylibjs/compare/v8.3.3...v8.3.4) (2023-12-14)
 
-
 ### Features
 
-* **polish:** text editor ([6365483](https://github.com/syyclops/syylibjs/commit/63654834865b70ac4a2ce51ea41bc5970d427d02))
+- **polish:** text editor ([6365483](https://github.com/syyclops/syylibjs/commit/63654834865b70ac4a2ce51ea41bc5970d427d02))
 
 ### [8.3.3](https://github.com/syyclops/syylibjs/compare/v8.3.2...v8.3.3) (2023-12-14)
 
-
 ### Features
 
-* **polish:** text editor ([d2c80b4](https://github.com/syyclops/syylibjs/commit/d2c80b44e1652d353f0e8c5da36b0422343b9738))
+- **polish:** text editor ([d2c80b4](https://github.com/syyclops/syylibjs/commit/d2c80b44e1652d353f0e8c5da36b0422343b9738))
 
 ### [8.3.2](https://github.com/syyclops/syylibjs/compare/v8.3.1...v8.3.2) (2023-12-14)
 
-
 ### Features
 
-* **polish:** text editor ([42bbbb6](https://github.com/syyclops/syylibjs/commit/42bbbb6af137167808eae2d10c56ef278af68cc6))
+- **polish:** text editor ([42bbbb6](https://github.com/syyclops/syylibjs/commit/42bbbb6af137167808eae2d10c56ef278af68cc6))
 
 ### [8.3.1](https://github.com/syyclops/syylibjs/compare/v8.3.0...v8.3.1) (2023-12-14)
 
-
 ### Features
 
-* **polish:** text editor ([ec441cf](https://github.com/syyclops/syylibjs/commit/ec441cf0c26697384120a1b3189cea1705ca0d6d))
+- **polish:** text editor ([ec441cf](https://github.com/syyclops/syylibjs/commit/ec441cf0c26697384120a1b3189cea1705ca0d6d))
 
 ## [8.3.0](https://github.com/syyclops/syylibjs/compare/v8.2.0...v8.3.0) (2023-12-14)
 
-
 ### Features
 
-* **polish:** text editor ([9946650](https://github.com/syyclops/syylibjs/commit/9946650a6981f1eaac35c99825580039be559f98))
+- **polish:** text editor ([9946650](https://github.com/syyclops/syylibjs/commit/9946650a6981f1eaac35c99825580039be559f98))
 
 ## [8.2.0](https://github.com/syyclops/syylibjs/compare/v8.1.0...v8.2.0) (2023-12-14)
 
-
 ### Features
 
-* **polish:** pm calendar props ([cd04678](https://github.com/syyclops/syylibjs/commit/cd046780b45ba611f050b2b4b56ba3e88c88db19))
+- **polish:** pm calendar props ([cd04678](https://github.com/syyclops/syylibjs/commit/cd046780b45ba611f050b2b4b56ba3e88c88db19))
 
 ## [8.1.0](https://github.com/syyclops/syylibjs/compare/v8.0.2...v8.1.0) (2023-12-08)
 
-
 ### Features
 
-* **polish:** rul calendar props ([01b38ca](https://github.com/syyclops/syylibjs/commit/01b38ca37f3515e90915493d5bddb564d9164593))
+- **polish:** rul calendar props ([01b38ca](https://github.com/syyclops/syylibjs/commit/01b38ca37f3515e90915493d5bddb564d9164593))
 
 ### [8.0.2](https://github.com/syyclops/syylibjs/compare/v8.0.1...v8.0.2) (2023-12-05)
 
-
 ### Features
 
-* **polish:** pie chart and progress ([1cf598e](https://github.com/syyclops/syylibjs/commit/1cf598ee6c501be563940f3d83c4548b4d795b86))
+- **polish:** pie chart and progress ([1cf598e](https://github.com/syyclops/syylibjs/commit/1cf598ee6c501be563940f3d83c4548b4d795b86))
 
 ### [8.0.1](https://github.com/syyclops/syylibjs/compare/v8.0.0...v8.0.1) (2023-11-27)
 
-
 ### Features
 
-* **polish:** date picker ([7e04ff2](https://github.com/syyclops/syylibjs/commit/7e04ff2f496481e8f1b2e89aacd764ff6b778aa1))
+- **polish:** date picker ([7e04ff2](https://github.com/syyclops/syylibjs/commit/7e04ff2f496481e8f1b2e89aacd764ff6b778aa1))
 
 ## [8.0.0](https://github.com/syyclops/syylibjs/compare/v7.1.1...v8.0.0) (2023-11-21)
 
-
 ### Features
 
-* **new-feature:** text editor ([975b784](https://github.com/syyclops/syylibjs/commit/975b7847561540cbad823226c94c33d704dcbf6f))
+- **new-feature:** text editor ([975b784](https://github.com/syyclops/syylibjs/commit/975b7847561540cbad823226c94c33d704dcbf6f))
 
 ### [7.1.1](https://github.com/syyclops/syylibjs/compare/v7.1.0...v7.1.1) (2023-11-15)
 
-
 ### Features
 
-* **polish:** rul calendar ([b7c80a3](https://github.com/syyclops/syylibjs/commit/b7c80a3df29a36a56c74590bc2aaf9e7772c1c59))
+- **polish:** rul calendar ([b7c80a3](https://github.com/syyclops/syylibjs/commit/b7c80a3df29a36a56c74590bc2aaf9e7772c1c59))
 
 ## [7.1.0](https://github.com/syyclops/syylibjs/compare/v7.0.0...v7.1.0) (2023-11-03)
 
-
 ### Features
 
-* **polish:** piechart props ([963780c](https://github.com/syyclops/syylibjs/commit/963780c6d5137fb9fda1eb6d777776a268f8562e))
+- **polish:** piechart props ([963780c](https://github.com/syyclops/syylibjs/commit/963780c6d5137fb9fda1eb6d777776a268f8562e))
 
 ## [7.0.0](https://github.com/syyclops/syylibjs/compare/v6.2.1...v7.0.0) (2023-11-02)
 
-
 ### Features
 
-* **new-feature:** schedule component ([9461fcb](https://github.com/syyclops/syylibjs/commit/9461fcb101cb74926c377a2825bda5e6a6fd3c5d))
+- **new-feature:** schedule component ([9461fcb](https://github.com/syyclops/syylibjs/commit/9461fcb101cb74926c377a2825bda5e6a6fd3c5d))
 
 ### [6.2.1](https://github.com/syyclops/syylibjs/compare/v6.2.0...v6.2.1) (2023-10-30)
 
-
 ### Features
 
-* **polish:** pmcalendar component ([b242609](https://github.com/syyclops/syylibjs/commit/b242609877fa6a8d89ae2ba4c05dca5f6b19ddda))
+- **polish:** pmcalendar component ([b242609](https://github.com/syyclops/syylibjs/commit/b242609877fa6a8d89ae2ba4c05dca5f6b19ddda))
 
 ## [6.2.0](https://github.com/syyclops/syylibjs/compare/v6.1.0...v6.2.0) (2023-10-13)
 
-
 ### Features
 
-* **new-feature:** tabs components ([6a661be](https://github.com/syyclops/syylibjs/commit/6a661be414559247ad91accccb5013f500c42076))
+- **new-feature:** tabs components ([6a661be](https://github.com/syyclops/syylibjs/commit/6a661be414559247ad91accccb5013f500c42076))
 
 ## [6.1.0](https://github.com/syyclops/syylibjs/compare/v6.0.0...v6.1.0) (2023-10-11)
 
-
 ### Features
 
-* **polish:** rul and input components ([61ec1f2](https://github.com/syyclops/syylibjs/commit/61ec1f2e777b4016b742bb5c518d87eae6eac946))
+- **polish:** rul and input components ([61ec1f2](https://github.com/syyclops/syylibjs/commit/61ec1f2e777b4016b742bb5c518d87eae6eac946))
 
 ## [6.0.0](https://github.com/syyclops/syylibjs/compare/v5.2.2...v6.0.0) (2023-10-03)
 
-
 ### Features
 
-* **polish:** click away events ([896deab](https://github.com/syyclops/syylibjs/commit/896deabe2cd9a0901b1c79ef0d6a6c37ff82b0db))
+- **polish:** click away events ([896deab](https://github.com/syyclops/syylibjs/commit/896deabe2cd9a0901b1c79ef0d6a6c37ff82b0db))
 
 ### [5.2.2](https://github.com/syyclops/syylibjs/compare/v5.2.1...v5.2.2) (2023-10-03)
 
-
 ### Features
 
-* **polish:** energy widget component ([25c4f9f](https://github.com/syyclops/syylibjs/commit/25c4f9f684e2c39f764a8f9cf2d8a9b83c402a0a))
-
+- **polish:** energy widget component ([25c4f9f](https://github.com/syyclops/syylibjs/commit/25c4f9f684e2c39f764a8f9cf2d8a9b83c402a0a))
 
 ### Bug Fixes
 
-* RUL NaN bug ([205c85a](https://github.com/syyclops/syylibjs/commit/205c85abce6481cd4cc40ab68febc50262f7c90b))
+- RUL NaN bug ([205c85a](https://github.com/syyclops/syylibjs/commit/205c85abce6481cd4cc40ab68febc50262f7c90b))
 
 ### [5.2.1](https://github.com/syyclops/syylibjs/compare/v5.2.0...v5.2.1) (2023-10-03)
 
-
 ### Features
 
-* **polish:** energy widget component ([370cbba](https://github.com/syyclops/syylibjs/commit/370cbba7942326b31537510ddd397183011e7c1b))
+- **polish:** energy widget component ([370cbba](https://github.com/syyclops/syylibjs/commit/370cbba7942326b31537510ddd397183011e7c1b))
 
 ## [5.2.0](https://github.com/syyclops/syylibjs/compare/v5.1.0...v5.2.0) (2023-09-29)
 
-
 ### Features
 
-* **new-feature:** energy graph component ([5615733](https://github.com/syyclops/syylibjs/commit/56157330e504d7c88011b16b7cec82ae00934863))
+- **new-feature:** energy graph component ([5615733](https://github.com/syyclops/syylibjs/commit/56157330e504d7c88011b16b7cec82ae00934863))
 
 ## [5.1.0](https://github.com/syyclops/syylibjs/compare/v5.0.0...v5.1.0) (2023-09-22)
 
-
 ### Features
 
-* **polish:** energy widget component ([27ed191](https://github.com/syyclops/syylibjs/commit/27ed191c14ceb1fe14cb5f7356de31f50c3770b8))
+- **polish:** energy widget component ([27ed191](https://github.com/syyclops/syylibjs/commit/27ed191c14ceb1fe14cb5f7356de31f50c3770b8))
 
 ## [5.0.0] (2023-09-22)
 
 ### Features
 
-* **new-feature:** energy widget component ([7ee613a](https://github.com/syyclops/syylibjs/commit/7ee613a80273a9393e0a92bc80f29e6f84c8131a))
+- **new-feature:** energy widget component ([7ee613a](https://github.com/syyclops/syylibjs/commit/7ee613a80273a9393e0a92bc80f29e6f84c8131a))
 
 ## [4.10.0] (2023-08-29)
 
-
 ### Features
 
-* **polish:** date picker component
+- **polish:** date picker component
+
 ## [4.9.0] (2023-08-24)
 
-
 ### Features
 
-* **polish:** date-;icker component ([dbded53](https://github.com/syyclops/syylibjs/commit/dbded5344244d13d147d703e14fe8468d9cde0c3))
+- **polish:** date-;icker component ([dbded53](https://github.com/syyclops/syylibjs/commit/dbded5344244d13d147d703e14fe8468d9cde0c3))
 
 ## [4.8.0] (2023-08-23)
 

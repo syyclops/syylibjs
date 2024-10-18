@@ -3,10 +3,11 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import classNames from "classnames";
-import { ActionProps } from "../types/action";
+import { ActionProps, ActionVariantType } from "../types/action";
 import { sizes, variants } from "../config/action";
 import { IconType } from "react-icons";
 import { BiLoaderAlt } from "react-icons/bi";
+import { outlinedVariants } from "../config";
 
 const Action = ({
   type,
@@ -23,6 +24,8 @@ const Action = ({
   animate = false,
   cx = "",
   iconSize,
+  compact = false,
+  outlined = false,
 }: ActionProps) => {
   const LeftIcon: IconType = leftIcon!;
   const RightIcon: IconType = rightIcon!;
@@ -35,7 +38,11 @@ const Action = ({
           type === "icon"
             ? variant === "transparent"
               ? ""
+              : compact
+              ? "px-1 py-1 opacity-100 transition duration-150"
               : "px-2 py-2 opacity-100 transition duration-150"
+            : compact
+            ? "px-2 py-1 transition duration-150"
             : "px-2.5 py-1.5 transition duration-150",
           variant
             ? variants[variant]
@@ -44,10 +51,13 @@ const Action = ({
             : variants["primary"],
           sizes[size],
           clickable
-            ? "hover:opacity-90 cursor-pointer"
-            : "opacity-50 cursor-not-allowed",
+            ? "cursor-pointer"
+            : "bg-mid-neutral-100 hover:bg-mid-neutral-100 hover:border-bg-mid-neutral-100 cursor-not-allowed",
           rounded ? "rounded-full" : "rounded-lg",
-          "relative w-fit flex justify-center items-center font-semibold border-none"
+          "relative w-fit flex justify-center items-center font-semibold",
+          outlined && variant
+            ? `${outlinedVariants[variant!]} bg-transparent`
+            : "border border-transparent"
         ),
         cx
       )}
