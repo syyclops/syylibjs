@@ -1,6 +1,6 @@
 {
   "name": "syylibjs",
-  "version": "10.1.0",
+  "version": "13.1.0",
   "description": "A component library created using tailwindCSS exclusively for Syyclops.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

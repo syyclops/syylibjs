@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [13.1.0](https://github.com/syyclops/syylibjs/compare/v10.1.0...v13.1.0) (2024-10-18)
+
 ## [10.1.0](https://github.com/syyclops/syylibjs/compare/v10.0.0...v10.1.0) (2024-10-17)
 
 ## [10.0.0](https://github.com/syyclops/syylibjs/compare/v9.0.0...v10.0.0) (2024-06-14)
